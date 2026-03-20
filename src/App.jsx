@@ -1,4 +1,7 @@
 import { useState } from 'react'
+//import obrazka jako obiekt React
+import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
+
 import './App.css'
 
 
@@ -10,7 +13,8 @@ function App() {
     <nav className="navbar sticky-top navbar-expand-lg" id="MainNav">
         <div className="container-fluid">
           <a className="navbar-brand" href="#" id="NavLogoText">
-            <img src="img/NevoltaTextLogo.svg" alt="Logo" width="100%" height="50px" className="d-inline-block align-text-center"/>
+            {/* Uzycie obiektu obrazu w nawiasach kedzierzawych */}
+            <img src={NevoltaTextLogo} alt="Logo" width="100%" height="50px" className="d-inline-block align-text-center"/>
           </a>
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="NavBurgerMenu">
             <span className="navbar-toggler-icon" id="NavBurgerIcon"></span>
