@@ -1,4 +1,20 @@
 import { useState } from 'react'
+import aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
+import aboutUs from '../src/assets/icons/aboutUs.svg';
+import accordionOpen from '../src/assets/icons/AccordionOpen.svg';
+import buttons from '../src/assets/icons/buttons.svg'
+import contact_white from '../src/assets/icons/contact_white.svg';
+import dpad from '../src/assets/icons/dpad.svg';
+import envelope from '../src/assets/icons/envelope.svg';
+import home_white from '../src/assets/icons/home_white.svg';
+import home from '../src/assets/icons/home.svg';
+import joystick from '../src/assets/icons/joystick.svg';
+import products_white from '../src/assets/icons/products_white.svg';
+import products from '../src/assets/icons/products.svg';
+import rounded from '../src/assets/icons/rounded.svg';
+import star2 from '../src/assets/icons/star2.svg';
+import tap from '../src/assets/icons/tap.svg';
+import twotone from '../src/assets/icons/twotone.svg';
 //import obrazka jako obiekt React
 import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
 import Photo_PCB from './assets/photos/P1050514.JPG';
@@ -28,10 +44,10 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active underline-anim" aria-current="page" href="#">Home <img className="nav-icon" alt="H" width="16px" height="16px" src="img/icons/home.svg"/></a>
-              <a className="nav-link underline-anim" href="products.html">Products <img className="nav-icon" alt="P" width="16px" height="16px" src="img/icons/products.svg"/></a>
-              <a className="nav-link underline-anim" href="about.html">About us <img className="nav-icon" alt="A" width="16px" height="16px" src="img/icons/aboutUs.svg"/></a>
-              <a className="nav-link underline-anim" href="contact.html">Contact <img className="nav-icon" alt="C" width="16px" height="16px" src="img/icons/contact.svg"/></a>
+              <a className="nav-link active underline-anim" aria-current="page" href="#">Home <img className="nav-icon" alt="H" width="16px" height="16px" src={home}/></a>
+              <a className="nav-link underline-anim" href="products.html">Products <img className="nav-icon" alt="P" width="16px" height="16px" src={products}/></a>
+              <a className="nav-link underline-anim" href="about.html">About us <img className="nav-icon" alt="A" width="16px" height="16px" src={aboutUs}/></a>
+              <a className="nav-link underline-anim" href="contact.html">Contact <img className="nav-icon" alt="C" width="16px" height="16px" src={aboutUs}/></a>
             </div>
           </div>
         </div>
@@ -226,19 +242,19 @@ function App() {
             </p>
             <div className="textPointerHolder">
               <p className="columnText textPointer textPointerFirst">
-                - Smooth, matte finish <img src="img/icons/tap.svg" className="smallIcon" alt="finish"/>
+                - Smooth, matte finish <img src={tap} className="smallIcon" alt="finish"/>
               </p>
               <p className="columnText textPointer">
-                - Black or white shell <img src="img/icons/twotone.svg" className="smallIcon" alt="twotone"/>
+                - Black or white shell <img src={twotone} className="smallIcon" alt="twotone"/>
               </p>
               <p className="columnText textPointer">
-                - Rounded corners <img src="img/icons/rounded.svg" className="smallIcon" alt="corners"/>
+                - Rounded corners <img src={rounded} className="smallIcon" alt="corners"/>
               </p>
               <p className="columnText textPointer">
-                - Quiet, tactile buttons <img src="img/icons/buttons.svg" className="smallIcon" alt="button"/>
+                - Quiet, tactile buttons <img src={buttons} className="smallIcon" alt="button"/>
               </p>
               <p className="columnText textPointer">
-                - Responsive DPad <img src="img/icons/dpad.svg" className="smallIcon" alt="button"/>
+                - Responsive DPad <img src={dpad} className="smallIcon" alt="button"/>
               </p>
             </div>
           </div>
@@ -308,7 +324,7 @@ function App() {
       <div className="container text-center">
         <div className="row">
           <div className="col-md-8 footerCol">
-            <img className="footerLogo" src="img/NevoltaTextLogo.svg" alt="Logo" width="100%" height="50px"/>
+            <img className="footerLogo" src={NevoltaTextLogo} alt="Logo" width="100%" height="50px"/>
             <p className="textCopyright">© 2025, Tomasz Gerka</p>
           </div>
           <div className="col-md-4">
