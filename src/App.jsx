@@ -1,6 +1,13 @@
 import { useState } from 'react'
 //import obrazka jako obiekt React
 import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
+import Photo_PCB from './assets/photos/P1050514.JPG';
+import Photo_Capabilities from './assets/Capabilities.png';
+import Photo_Kits from './assets/photos/P1050486.JPG';
+import Photo_VertConsole from './assets/photos/P1050484_rot.JPG';
+import Photo_ESP32 from './assets/photos/P1050498.JPG';
+import Photo_HorizontalConsole from './assets/photos/P1050500.JPG';
+
 
 import './App.css'
 
@@ -47,7 +54,7 @@ function App() {
       <div className="row">
         <div className="col-sm">
           <div className="card blur-bg mainCard">
-            <img src="img/photos/P1050514.JPG" className="card-img-top mainCardImage" alt="Specs"/>
+            <img src={Photo_PCB} className="card-img-top mainCardImage" alt="Specs"/>
             <div className="card-body">
               <h5 className="card-title text-font-alt">Specifications</h5>
               <p className="card-text">See the hardware specs of <span className="text-font-alt"> Nevolta V</span></p>
@@ -57,7 +64,7 @@ function App() {
         </div>
         <div className="col-sm">
           <div className="card blur-bg mainCard">
-            <img src="img/Capabilities.png" className="card-img-top mainCardImage" alt="Capabilities"/>
+            <img src={Photo_Capabilities} className="card-img-top mainCardImage" alt="Capabilities"/>
             <div className="card-body">
               <h5 className="card-title text-font-alt">Capabilities</h5>
               <p className="card-text">Learn what is possible with <span className="text-font-alt">Nevolta V</span></p>
@@ -67,7 +74,7 @@ function App() {
         </div>
         <div className="col-sm">
           <div className="card blur-bg mainCard">
-            <img src="img/photos/P1050486.JPG" className="card-img-top mainCardImage kitsImg" alt="Kits"/>
+            <img src={Photo_Kits} className="card-img-top mainCardImage kitsImg" alt="Kits"/>
             <div className="card-body">
               <h5 className="card-title text-font-alt">Kits</h5>
               <p className="card-text">Buy <i>plug and play</i>, DIY, and bundled kits.</p>
@@ -205,7 +212,7 @@ function App() {
       <div className="row contentRow">
         <div className="col-md">
           <div className="photoColumn">
-            <img className="photoColumnImg" src="img/photos/P1050484_rot.JPG" alt="Console"/>
+            <img className="photoColumnImg" src={Photo_VertConsole} alt="Console"/>
           </div>
         </div>
         <div className="col-md">
@@ -263,13 +270,13 @@ function App() {
         </div>
         <div className="col-md order-1 order-md-2">
           <div className="photoColumn">
-            <img className="photoColumnImg" src="img/photos/P1050498.JPG" alt="Console"/>
+            <img className="photoColumnImg" src={Photo_ESP32} alt="Console"/>
           </div>
         </div>
       </div>
       <div className="row contentRow">
         <div className="photoColumn photoHorizontal">
-            <img className="photoColumnImg" src="img/photos/P1050500.JPG" alt="Console"/>
+            <img className="photoColumnImg" src={Photo_HorizontalConsole} alt="Console"/>
         </div>
       </div>
       <div className="row contentRow">
