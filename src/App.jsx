@@ -1,19 +1,20 @@
 import { useState } from 'react'
-import aboutUs_white from '../src/assets/icons/aboutUs_white';
-import aboutUs from '../src/assets/icons/aboutUs';
-import accordionOpen from '../src/assets/icons/buttons';
-import contact_white from '../src/assets/icons/contact_white';
-import dpad from '../src/assets/icons/dpad';
-import envelope from '../src/assets/icons/envelope';
-import home_white from '../src/assets/icons/home_white';
-import home from '../src/assets/icons/home';
-import joystick from '../src/assets/icons/joystick';
-import products_white from '../src/assets/icons/products_white';
-import products from '../src/assets/icons/products';
-import rounded from '../src/assets/icons/rounded';
-import star2 from '../src/assets/icons/star2';
-import tap from '../src/assets/icons/tap';
-import twotone from '../src/assets/icons/twotone';
+import aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
+import aboutUs from '../src/assets/icons/aboutUs.svg';
+import accordionOpen from '../src/assets/icons/AccordionOpen.svg';
+import buttons from '../src/assets/icons/buttons.svg'
+import contact_white from '../src/assets/icons/contact_white.svg';
+import dpad from '../src/assets/icons/dpad.svg';
+import envelope from '../src/assets/icons/envelope.svg';
+import home_white from '../src/assets/icons/home_white.svg';
+import home from '../src/assets/icons/home.svg';
+import joystick from '../src/assets/icons/joystick.svg';
+import products_white from '../src/assets/icons/products_white.svg';
+import products from '../src/assets/icons/products.svg';
+import rounded from '../src/assets/icons/rounded.svg';
+import star2 from '../src/assets/icons/star2.svg';
+import tap from '../src/assets/icons/tap.svg';
+import twotone from '../src/assets/icons/twotone.svg';
 //import obrazka jako obiekt React
 import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
 
@@ -316,7 +317,7 @@ function App() {
       <div className="container text-center">
         <div className="row">
           <div className="col-md-8 footerCol">
-            <img className="footerLogo" src="img/NevoltaTextLogo.svg" alt="Logo" width="100%" height="50px"/>
+            <img className="footerLogo" src={NevoltaTextLogo} alt="Logo" width="100%" height="50px"/>
             <p className="textCopyright">© 2025, Tomasz Gerka</p>
           </div>
           <div className="col-md-4">
