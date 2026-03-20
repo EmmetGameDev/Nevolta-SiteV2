@@ -23,6 +23,9 @@ import Photo_Kits from './assets/photos/P1050486.JPG';
 import Photo_VertConsole from './assets/photos/P1050484_rot.JPG';
 import Photo_ESP32 from './assets/photos/P1050498.JPG';
 import Photo_HorizontalConsole from './assets/photos/P1050500.JPG';
+import "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
+import '../src/scripts/specsScript.js';
+import '../src/scripts/scripts.js';
 
 
 import './App.css'

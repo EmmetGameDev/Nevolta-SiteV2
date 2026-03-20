@@ -174,11 +174,11 @@ var options = {
     }]
   }]
 }
-
+/*
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 chart.hideSeries("Consoles");
-
+*/
 
 const chartObsCallback = (entries) => {
   for (const entry of entries) {
@@ -190,8 +190,11 @@ const chartObsCallback = (entries) => {
   }
 }
 
+/*
 const chartObs = new IntersectionObserver(chartObsCallback, { threshold: 0.25 });
 document.querySelectorAll('.chart').forEach(item => chartObs.observe(item));
+*/
+
 
 // Photo Animations
 
