@@ -9,6 +9,7 @@ import LandingPageFront from './components/LandingPageFront.tsx';
 import LandingPageFrontSplit from './components/LandingPageFrontSplit.tsx';
 import DualColumnContentRow from './components/DualColumnContentRow.tsx';
 import FeaturesList from './components/FeaturesList.tsx';
+import FullWidthPhotoRow from './components/helper/FullWidthPhotoRow.tsx';
 
 // import obrazka jako obiekt React
 import { NevoltaTextLogo } from './assets/svgs/index.js';
@@ -28,9 +29,7 @@ function App() {
     <div className='container-fluid m-0 p-0'>
     <Navbar/>
     <div className="container text-center">
-      <div className="row">
-        <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta V!" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8?controls=0&modestbranding=1&rel=0" />
-      </div>
+      <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta V!" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8?controls=0&modestbranding=1&rel=0" />
       <div className="row">
         <GridCard
           header="Specifications"
@@ -51,9 +50,7 @@ function App() {
           btnHref="kits.html"
         />
       </div>
-      <div className="row">
-        <ConsoleScroller />
-      </div>
+      <ConsoleScroller/>
       <DualColumnContentRow 
         photoAltText="Console"
         photoSrc={PhotoConsoleFrontVert}
@@ -74,11 +71,7 @@ function App() {
         extraComponent={null}
         ifLeftPhoto={false}
       />
-      <div className="row contentRow">
-        <div className="photoColumn photoHorizontal">
-            <img className="photoColumnImg" src={PhotoSky} alt="Console"/>
-        </div>
-      </div>
+      <FullWidthPhotoRow photoSrc={PhotoSky} photoAltText="Sky" />
       <div className="row contentRow">
         <div className="col-md">
           <div className="contentColumn">

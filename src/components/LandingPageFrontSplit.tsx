@@ -8,24 +8,24 @@ interface landingPageFrontSplitProps {
     videoSrc: string;
 }
 
-function LandingPageFrontSplit(props: landingPageFrontSplitProps){
+function LandingPageFrontSplit({title, description, modelName, videoSrc}: landingPageFrontSplitProps) {
     return(
-        <>
+        <div className="row">
             {/*<video autoPlay muted loop preload="auto" id="myVideo">
             <source src="/public/BannerVid_Compressed.mp4" type="video/mp4"/>
             </video>*/}
             <div className="col-md">
                 <div className="splitVertCenterer">
-                    <iframe title="YouTube video player" className="ytIframe" allow="autoplay; encrypted-media" src={props.videoSrc}/>
+                    <iframe title="YouTube video player" className="ytIframe" allow="autoplay; encrypted-media" src={videoSrc}/>
                 </div>
             </div>
             <div className="col-md-4">
                 <div className="splitVertCenterer">
-                    <h3 className="allNewText">{props.title}<ModelNameText modelName={props.modelName} /></h3>
+                    <h3 className="allNewText">{title}<ModelNameText modelName={modelName} /></h3>
                     <LargeButton text="Get Yours" href="kits.html" />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

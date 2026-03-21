@@ -2,11 +2,11 @@ interface ScrollElProps {
     name: string;
 }
 
-function ScrollEl(props: ScrollElProps) {
+function ScrollEl({name}: ScrollElProps) {
     return (
         <div className="scrollBox">
             <h3>
-                {props.name}
+                {name}
             </h3>
         </div>
     )

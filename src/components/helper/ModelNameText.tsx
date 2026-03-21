@@ -2,9 +2,9 @@ interface ModelNameTextProps {
     modelName: string;
 }
 
-function ModelNameText(props: ModelNameTextProps) {
+function ModelNameText({modelName}: ModelNameTextProps) {
     return (
-        <span className="text-font-alt modelName">{props.modelName}</span>
+        <span className="text-font-alt modelName">{modelName}</span>
     )
 }
 

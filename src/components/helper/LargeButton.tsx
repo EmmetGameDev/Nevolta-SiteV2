@@ -3,12 +3,12 @@ interface LargeButtonProps {
     href: string;
 }
 
-function LargeButton(props: LargeButtonProps){
+function LargeButton({text, href}: LargeButtonProps){
     return (
-        <a className="emptyLink" href={props.href}>
+        <a className="emptyLink" href={href}>
           <button className="getYoursBtn">
             <div className="getYoursBtnText">
-              {props.text}
+              {text}
             </div>
           </button>
         </a>

@@ -5,15 +5,15 @@ interface GridCardProps {
     btnHref: string;
 }
 
-function GridCard(props: GridCardProps) {
+function GridCard({header, description, imgSrc, btnHref}: GridCardProps) {
     return(
         <div className="col-sm">
           <div className="card blur-bg mainCard">
-            <img src={props.imgSrc} className="card-img-top mainCardImage" alt={props.header}/>
+            <img src={imgSrc} className="card-img-top mainCardImage" alt={header}/>
             <div className="card-body">
-              <h5 className="card-title text-font-alt">{props.header}</h5>
-              <p className="card-text">{props.description}</p>
-              <a href={props.btnHref} className="cstmButton">Learn more</a>
+              <h5 className="card-title text-font-alt">{header}</h5>
+              <p className="card-text">{description}</p>
+              <a href={btnHref} className="cstmButton">Learn more</a>
             </div>
           </div>
         </div>
