@@ -1,3 +1,25 @@
+# Korzystanie z programu
+
+W konsoli cmd przechodzimy do folderu projektu
+
+Włączamy za pomocą komendy `npm start`
+
+Wszystkie obrazy i ikony powinny znajdować się w folderach /public lub /src/assets
+
+# Roadmap for the future
+
+- Przeskalowanie w dół i przekonwertowanie obrazów na WEBP
+
+- Skompresowanie tego filmiku ktory wazy 22mb
+
+- Dodanie barrel file na import plikow obrazu i ikon
+
+- Uporzadkowanie folderow ze zdjeciami i ikonami (duze zdjecia i filmu ida do /public, reszta idzie do /assets UPORZADKOWANE!!!)
+
+- Przepisanie skryptów w Reakcie wraz z pojawianiem sie obrazow
+
+- Calkowite przerzucenie Navbaru, Stopki oraz Kart na komponenty React
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
