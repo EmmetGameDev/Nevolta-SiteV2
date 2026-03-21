@@ -36,7 +36,6 @@ import '../src/scripts/scripts.js';
 
 import './App.css';
 
-
 function App() {
 
   return (
