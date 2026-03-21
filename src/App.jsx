@@ -1,8 +1,9 @@
 import { useState } from 'react'
 
 // komponenty React
-import NavLink from './components/NavLink.tsx'; 
-import GridCard from './components/GridCard.tsx';
+import NavLink from './components/helper/NavLink.tsx'; 
+import GridCard from './components/helper/GridCard.tsx';
+import ConsoleScroller from './components/ConsoleScroller.tsx';
 
 // import obrazka jako obiekt React
 import Icon_aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
@@ -95,130 +96,7 @@ function App() {
         />
       </div>
       <div className="row">
-        <div className="wrapScrollingText">
-          <div className="scrollTrack">
-            <div className="scrollBox">
-              <h3>
-                Game Boy
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Game Boy Color
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Nintendo
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Super Nintendo
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Lynx
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Coleco vision
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                PC Engine
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                DOOM
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                SG-1000
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Sega Master System
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Sega Genesis
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Game Gear
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Game Boy
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Game Boy Color
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Nintendo
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Super Nintendo
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Lynx
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Coleco vision
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                PC Engine
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                DOOM
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                SG-1000
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Sega Master System
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Sega Genesis
-              </h3>
-            </div>
-            <div className="scrollBox">
-              <h3>
-                Game Gear
-              </h3>
-            </div>
-          </div>
-        </div>
+        <ConsoleScroller />
       </div>
       <div className="row contentRow">
         <div className="col-md">
