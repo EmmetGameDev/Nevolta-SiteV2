@@ -71,6 +71,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+/*
 function showPointer(el, yn){
   el.classList.toggle('pointer-animation', !!yn);
 }
@@ -90,10 +91,11 @@ const intersectionCallback = (entries) => {
 }
 
 const observer = new IntersectionObserver(intersectionCallback, { threshold: 0.25 });
-document.querySelectorAll('.textPointerFirst').forEach(item => observer.observe(item));
+document.querySelectorAll('.textPointerFirst').forEach(item => observer.observe(item)); */
 
 // Bar chart
 
+/*
 var options = {
   chart: {
     animations: {
@@ -174,7 +176,7 @@ var options = {
     }]
   }]
 }
-/*
+
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 chart.hideSeries("Consoles");
@@ -198,6 +200,7 @@ document.querySelectorAll('.chart').forEach(item => chartObs.observe(item));
 
 // Photo Animations
 
+/*
 function showPhoto(el){
   el.classList.add("photoAnim");
 }
@@ -211,4 +214,4 @@ const photoObsCallback = (entries) => {
 }
 
 const photoObs = new IntersectionObserver(photoObsCallback, { threshold: 0.25 });
-document.querySelectorAll('.photoColumnImg').forEach(item => photoObs.observe(item));
+document.querySelectorAll('.photoColumnImg').forEach(item => photoObs.observe(item));*/
