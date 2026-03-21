@@ -1,35 +1,20 @@
 import { useState } from 'react'
 
 // komponenty React
-import NavLink from './components/helper/NavLink.tsx'; 
+import NavLink from './components/helper/NavLink.tsx';
+import Navbar from './components/Navbar.tsx';
 import GridCard from './components/helper/GridCard.tsx';
 import ConsoleScroller from './components/ConsoleScroller.tsx';
 import LandingPageFront from './components/LandingPageFront.tsx';
 
 // import obrazka jako obiekt React
-import Icon_aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
-import Icon_aboutUs from '../src/assets/icons/aboutUs.svg';
-import Icon_accordionOpen from '../src/assets/icons/AccordionOpen.svg';
-import Icon_buttons from '../src/assets/icons/buttons.svg'
-import Icon_contact_white from '../src/assets/icons/contact_white.svg';
-import Icon_dpad from '../src/assets/icons/dpad.svg';
-import Icon_envelope from '../src/assets/icons/envelope.svg';
-import Icon_home_white from '../src/assets/icons/home_white.svg';
-import Icon_home from '../src/assets/icons/home.svg';
-import Icon_joystick from '../src/assets/icons/joystick.svg';
-import Icon_products_white from '../src/assets/icons/products_white.svg';
-import Icon_products from '../src/assets/icons/products.svg';
-import Icon_rounded from '../src/assets/icons/rounded.svg';
-import Icon_star2 from '../src/assets/icons/star2.svg';
-import Icon_tap from '../src/assets/icons/tap.svg';
-import Icon_twotone from '../src/assets/icons/twotone.svg';
-import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
-/*import Photo_PCB from './assets/photos/P1050514.JPG';
-import Photo_Capabilities from './assets/Capabilities.png';
-import Photo_Kits from './assets/photos/P1050486.JPG';
-import Photo_VertConsole from './assets/photos/P1050484_rot.JPG';
-import Photo_ESP32 from './assets/photos/P1050498.JPG';
-import Photo_HorizontalConsole from './assets/photos/P1050500.JPG';*/
+
+
+
+
+import { NevoltaTextLogo } from './assets/svgs/index.js';
+import { PhotoCapabilities, PhotoPCBQuarter, PhotoQuarter, PhotoConsoleFrontVert, PhotoVertESP32, PhotoSky } from './assets/photos/index.js';
+import { Tap, Twotone, Rounded, Buttons, Dpad } from './assets/icons/index.js';
 
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
 import '../src/scripts/specsScript.js';
@@ -41,46 +26,28 @@ import './App.css';
 function App() {
   return (
     <div className='container-fluid m-0'>
-    <nav className="navbar sticky-top navbar-expand-lg" id="MainNav">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="index.html" id="NavLogoText">
-            {/* Uzycie obiektu obrazu w nawiasach kedzierzawych */}
-            <img src={NevoltaTextLogo} alt="Logo" width="100%" height="50px" className="d-inline-block align-text-center"/>
-          </a>
-          <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="NavBurgerMenu">
-            <span className="navbar-toggler-icon" id="NavBurgerIcon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <NavLink href="index.html" text="Home" iconSrc={Icon_home} />
-              <NavLink href="products.html" text="Products" iconSrc={Icon_products} />
-              <NavLink href="about.html" text="About us" iconSrc={Icon_aboutUs} />
-              <NavLink href="contact.html" text="Contact" iconSrc={Icon_envelope} />
-            </div>
-          </div>
-        </div>
-    </nav>
+    <Navbar/>
     <div className="container text-center">
       <div className="row">
         <LandingPageFront title="The all new" modelName="Nevolta V" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8" />
       </div>
       <div className="row">
-        <GridCard 
+        <GridCard
           header="Specifications"
           description="See the hardware specs of the Nevolta V."
-          imgSrc={Photo_PCB}
+          imgSrc={PhotoPCBQuarter}
           btnHref="specs.html"
         />
-        <GridCard 
+        <GridCard
           header="Capabilities"
           description="Learn what is possible with the Nevolta V."
-          imgSrc={Photo_Capabilities}
+          imgSrc={PhotoCapabilities}
           btnHref="capabilities.html"
         />
-        <GridCard 
+        <GridCard
           header="Kits"
           description="Buy plug and play, DIY, and bundled kits."
-          imgSrc={Photo_Kits}
+          imgSrc={PhotoQuarter}
           btnHref="kits.html"
         />
       </div>
@@ -90,7 +57,7 @@ function App() {
       <div className="row contentRow">
         <div className="col-md">
           <div className="photoColumn">
-            <img className="photoColumnImg" src={Photo_VertConsole} alt="Console"/>
+            <img className="photoColumnImg" src={PhotoConsoleFrontVert} alt="Console"/>
           </div>
         </div>
         <div className="col-md">
@@ -104,26 +71,26 @@ function App() {
             </p>
             <div className="textPointerHolder">
               <p className="columnText textPointer textPointerFirst">
-                - Smooth, matte finish <img src={Icon_tap} className="smallIcon" alt="finish"/>
+                - Smooth, matte finish <img src={Tap} className="smallIcon" alt="finish"/>
               </p>
               <p className="columnText textPointer">
-                - Black or white shell <img src={Icon_twotone} className="smallIcon" alt="twotone"/>
+                - Black or white shell <img src={Twotone} className="smallIcon" alt="twotone"/>
               </p>
               <p className="columnText textPointer">
-                - Rounded corners <img src={Icon_rounded} className="smallIcon" alt="corners"/>
+                - Rounded corners <img src={Rounded} className="smallIcon" alt="corners"/>
               </p>
               <p className="columnText textPointer">
-                - Quiet, tactile buttons <img src={Icon_buttons} className="smallIcon" alt="button"/>
+                - Quiet, tactile buttons <img src={Buttons} className="smallIcon" alt="button"/>
               </p>
               <p className="columnText textPointer">
-                - Responsive DPad <img src={Icon_dpad} className="smallIcon" alt="button"/>
+                - Responsive DPad <img src={Dpad} className="smallIcon" alt="button"/>
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="row contentRow">
-        
+
       </div>
       <div className="row contentRow">
         <div className="col-md order-2 order-md-1">
@@ -148,13 +115,13 @@ function App() {
         </div>
         <div className="col-md order-1 order-md-2">
           <div className="photoColumn">
-            <img className="photoColumnImg" src={Photo_ESP32} alt="Console"/>
+            <img className="photoColumnImg" src={PhotoVertESP32} alt="Console"/>
           </div>
         </div>
       </div>
       <div className="row contentRow">
         <div className="photoColumn photoHorizontal">
-            <img className="photoColumnImg" src={Photo_HorizontalConsole} alt="Console"/>
+            <img className="photoColumnImg" src={PhotoSky} alt="Console"/>
         </div>
       </div>
       <div className="row contentRow">
@@ -205,9 +172,10 @@ function App() {
               </li>
             </ul>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossOrigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
