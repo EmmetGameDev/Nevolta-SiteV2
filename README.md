@@ -8,17 +8,13 @@ Wszystkie obrazy i ikony powinny znajdować się w folderach /public lub /src/as
 
 # Roadmap for the future
 
-- Przeskalowanie w dół i przekonwertowanie obrazów na WEBP
-
-- Skompresowanie tego filmiku ktory wazy 22mb
-
-- Dodanie barrel file na import plikow obrazu i ikon
-
-- Uporzadkowanie folderow ze zdjeciami i ikonami (duze zdjecia i filmu ida do /public, reszta idzie do /assets UPORZADKOWANE!!!)
-
 - Przepisanie skryptów w Reakcie wraz z pojawianiem sie obrazow
 
 - Calkowite przerzucenie Navbaru, Stopki oraz Kart na komponenty React
+
+- Implementacja kolejnych podstron html kits, specs, about itd. (Moze tu sie przydac "react-router")
+
+
 
 # React + Vite
 

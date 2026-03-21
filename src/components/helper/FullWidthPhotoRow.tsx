@@ -6,7 +6,7 @@ interface FullWidthPhotoRowProps {
 function FullWidthPhotoRow({photoSrc, photoAltText}: FullWidthPhotoRowProps){
     return(
         <div className="row contentRow">
-            <div className="photoColumn photoHorizontal">
+            <div className="photoColumn photoHorizontal scrollImageShow">
                 <img className="photoColumnImg" src={photoSrc} alt={photoAltText}/>
             </div>
         </div>

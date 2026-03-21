@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 // komponenty React
 import NavLink from './components/helper/NavLink.tsx';
@@ -14,12 +14,11 @@ import FullWidthPhotoRow from './components/helper/FullWidthPhotoRow.tsx';
 // import obrazka jako obiekt React
 import { NevoltaTextLogo } from './assets/svgs/index.js';
 import { PhotoCapabilities, PhotoPCBQuarter, PhotoQuarter, PhotoConsoleFrontVert, PhotoVertESP32, PhotoSky } from './assets/photos/index.js';
-import { Tap, Twotone, Rounded, Buttons, Dpad } from './assets/icons/index.js';
 
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
-import '../src/scripts/specsScript.js';
-import '../src/scripts/scripts.js';
+import './scripts/specsScript.js';
+import './scripts/scripts.js';
 
 
 import './App.css';
@@ -102,7 +101,7 @@ function App() {
         <div className="row">
           <div className="col-md-8 footerCol">
             <img className="footerLogo" src={NevoltaTextLogo} alt="Logo" width="100%" height="50px"/>
-            <p className="textCopyright">© 2025, Tomasz Gerka</p>
+            <p className="textCopyright">© 2026, Tomasz Gerka</p>
           </div>
           <div className="col-md-4">
             <ul className="footerLinksList">
