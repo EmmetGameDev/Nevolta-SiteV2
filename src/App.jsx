@@ -6,17 +6,15 @@ import Navbar from './components/Navbar.tsx';
 import GridCard from './components/helper/GridCard.tsx';
 import ConsoleScroller from './components/ConsoleScroller.tsx';
 import LandingPageFront from './components/LandingPageFront.tsx';
+import LandingPageFrontSplit from './components/LandingPageFrontSplit.tsx';
 
 // import obrazka jako obiekt React
-
-
-
-
 import { NevoltaTextLogo } from './assets/svgs/index.js';
 import { PhotoCapabilities, PhotoPCBQuarter, PhotoQuarter, PhotoConsoleFrontVert, PhotoVertESP32, PhotoSky } from './assets/photos/index.js';
 import { Tap, Twotone, Rounded, Buttons, Dpad } from './assets/icons/index.js';
 
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
+import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js";
 import '../src/scripts/specsScript.js';
 import '../src/scripts/scripts.js';
 
@@ -25,11 +23,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className='container-fluid m-0'>
+    <div className='container-fluid m-0 p-0'>
     <Navbar/>
     <div className="container text-center">
       <div className="row">
-        <LandingPageFront title="The all new" modelName="Nevolta V" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8" />
+        <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta V!" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8?controls=0&modestbranding=1&rel=0" />
       </div>
       <div className="row">
         <GridCard
@@ -177,10 +175,10 @@ function App() {
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossOrigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/scripts.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossOrigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <script src="js/scripts.js"></script>
     </div>
   )
 }
