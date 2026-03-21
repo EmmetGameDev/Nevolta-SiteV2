@@ -1,21 +1,26 @@
 import { useState } from 'react'
-import aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
-import aboutUs from '../src/assets/icons/aboutUs.svg';
-import accordionOpen from '../src/assets/icons/AccordionOpen.svg';
-import buttons from '../src/assets/icons/buttons.svg'
-import contact_white from '../src/assets/icons/contact_white.svg';
-import dpad from '../src/assets/icons/dpad.svg';
-import envelope from '../src/assets/icons/envelope.svg';
-import home_white from '../src/assets/icons/home_white.svg';
-import home from '../src/assets/icons/home.svg';
-import joystick from '../src/assets/icons/joystick.svg';
-import products_white from '../src/assets/icons/products_white.svg';
-import products from '../src/assets/icons/products.svg';
-import rounded from '../src/assets/icons/rounded.svg';
-import star2 from '../src/assets/icons/star2.svg';
-import tap from '../src/assets/icons/tap.svg';
-import twotone from '../src/assets/icons/twotone.svg';
-//import obrazka jako obiekt React
+
+// komponenty React
+import NavLink from './components/NavLink.tsx'; 
+import GridCard from './components/GridCard.tsx';
+
+// import obrazka jako obiekt React
+import Icon_aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
+import Icon_aboutUs from '../src/assets/icons/aboutUs.svg';
+import Icon_accordionOpen from '../src/assets/icons/AccordionOpen.svg';
+import Icon_buttons from '../src/assets/icons/buttons.svg'
+import Icon_contact_white from '../src/assets/icons/contact_white.svg';
+import Icon_dpad from '../src/assets/icons/dpad.svg';
+import Icon_envelope from '../src/assets/icons/envelope.svg';
+import Icon_home_white from '../src/assets/icons/home_white.svg';
+import Icon_home from '../src/assets/icons/home.svg';
+import Icon_joystick from '../src/assets/icons/joystick.svg';
+import Icon_products_white from '../src/assets/icons/products_white.svg';
+import Icon_products from '../src/assets/icons/products.svg';
+import Icon_rounded from '../src/assets/icons/rounded.svg';
+import Icon_star2 from '../src/assets/icons/star2.svg';
+import Icon_tap from '../src/assets/icons/tap.svg';
+import Icon_twotone from '../src/assets/icons/twotone.svg';
 import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
 import Photo_PCB from './assets/photos/P1050514.JPG';
 import Photo_Capabilities from './assets/Capabilities.png';
@@ -23,22 +28,23 @@ import Photo_Kits from './assets/photos/P1050486.JPG';
 import Photo_VertConsole from './assets/photos/P1050484_rot.JPG';
 import Photo_ESP32 from './assets/photos/P1050498.JPG';
 import Photo_HorizontalConsole from './assets/photos/P1050500.JPG';
+
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
 import '../src/scripts/specsScript.js';
 import '../src/scripts/scripts.js';
 
 
-import './App.css'
+import './App.css';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className='container-fluid m-0'>
     <nav className="navbar sticky-top navbar-expand-lg" id="MainNav">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#" id="NavLogoText">
+          <a className="navbar-brand" href="index.html" id="NavLogoText">
             {/* Uzycie obiektu obrazu w nawiasach kedzierzawych */}
             <img src={NevoltaTextLogo} alt="Logo" width="100%" height="50px" className="d-inline-block align-text-center"/>
           </a>
@@ -47,10 +53,10 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active underline-anim" aria-current="page" href="#">Home <img className="nav-icon" alt="H" width="16px" height="16px" src={home}/></a>
-              <a className="nav-link underline-anim" href="products.html">Products <img className="nav-icon" alt="P" width="16px" height="16px" src={products}/></a>
-              <a className="nav-link underline-anim" href="about.html">About us <img className="nav-icon" alt="A" width="16px" height="16px" src={aboutUs}/></a>
-              <a className="nav-link underline-anim" href="contact.html">Contact <img className="nav-icon" alt="C" width="16px" height="16px" src={aboutUs}/></a>
+              <NavLink href="index.html" text="Home" iconSrc={Icon_home} />
+              <NavLink href="products.html" text="Products" iconSrc={Icon_products} />
+              <NavLink href="about.html" text="About us" iconSrc={Icon_aboutUs} />
+              <NavLink href="contact.html" text="Contact" iconSrc={Icon_envelope} />
             </div>
           </div>
         </div>
@@ -71,36 +77,24 @@ function App() {
         </a>
       </div>
       <div className="row">
-        <div className="col-sm">
-          <div className="card blur-bg mainCard">
-            <img src={Photo_PCB} className="card-img-top mainCardImage" alt="Specs"/>
-            <div className="card-body">
-              <h5 className="card-title text-font-alt">Specifications</h5>
-              <p className="card-text">See the hardware specs of <span className="text-font-alt"> Nevolta V</span></p>
-              <a href="specs.html" className="cstmButton">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm">
-          <div className="card blur-bg mainCard">
-            <img src={Photo_Capabilities} className="card-img-top mainCardImage" alt="Capabilities"/>
-            <div className="card-body">
-              <h5 className="card-title text-font-alt">Capabilities</h5>
-              <p className="card-text">Learn what is possible with <span className="text-font-alt">Nevolta V</span></p>
-              <a href="capabilities.html" className="cstmButton">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm">
-          <div className="card blur-bg mainCard">
-            <img src={Photo_Kits} className="card-img-top mainCardImage kitsImg" alt="Kits"/>
-            <div className="card-body">
-              <h5 className="card-title text-font-alt">Kits</h5>
-              <p className="card-text">Buy <i>plug and play</i>, DIY, and bundled kits.</p>
-              <a href="kits.html" className="cstmButton">Learn more</a>
-            </div>
-          </div>
-        </div>
+        <GridCard 
+          header="Specifications"
+          description="See the hardware specs of the Nevolta V."
+          imgSrc={Photo_PCB}
+          btnHref="specs.html"
+        />
+        <GridCard 
+          header="Capabilities"
+          description="Learn what is possible with the Nevolta V."
+          imgSrc={Photo_Capabilities}
+          btnHref="capabilities.html"
+        />
+        <GridCard 
+          header="Kits"
+          description="Buy plug and play, DIY, and bundled kits."
+          imgSrc={Photo_Kits}
+          btnHref="kits.html"
+        />
       </div>
       <div className="row">
         <div className="wrapScrollingText">
@@ -245,19 +239,19 @@ function App() {
             </p>
             <div className="textPointerHolder">
               <p className="columnText textPointer textPointerFirst">
-                - Smooth, matte finish <img src={tap} className="smallIcon" alt="finish"/>
+                - Smooth, matte finish <img src={Icon_tap} className="smallIcon" alt="finish"/>
               </p>
               <p className="columnText textPointer">
-                - Black or white shell <img src={twotone} className="smallIcon" alt="twotone"/>
+                - Black or white shell <img src={Icon_twotone} className="smallIcon" alt="twotone"/>
               </p>
               <p className="columnText textPointer">
-                - Rounded corners <img src={rounded} className="smallIcon" alt="corners"/>
+                - Rounded corners <img src={Icon_rounded} className="smallIcon" alt="corners"/>
               </p>
               <p className="columnText textPointer">
-                - Quiet, tactile buttons <img src={buttons} className="smallIcon" alt="button"/>
+                - Quiet, tactile buttons <img src={Icon_buttons} className="smallIcon" alt="button"/>
               </p>
               <p className="columnText textPointer">
-                - Responsive DPad <img src={dpad} className="smallIcon" alt="button"/>
+                - Responsive DPad <img src={Icon_dpad} className="smallIcon" alt="button"/>
               </p>
             </div>
           </div>
@@ -358,4 +352,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
