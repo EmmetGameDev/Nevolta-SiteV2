@@ -4,6 +4,7 @@ import { useState } from 'react'
 import NavLink from './components/helper/NavLink.tsx'; 
 import GridCard from './components/helper/GridCard.tsx';
 import ConsoleScroller from './components/ConsoleScroller.tsx';
+import LandingPageFront from './components/LandingPageFront.tsx';
 
 // import obrazka jako obiekt React
 import Icon_aboutUs_white from '../src/assets/icons/aboutUs_white.svg';
@@ -23,12 +24,12 @@ import Icon_star2 from '../src/assets/icons/star2.svg';
 import Icon_tap from '../src/assets/icons/tap.svg';
 import Icon_twotone from '../src/assets/icons/twotone.svg';
 import NevoltaTextLogo from './assets/NevoltaTextLogo.svg';
-import Photo_PCB from './assets/photos/P1050514.JPG';
+/*import Photo_PCB from './assets/photos/P1050514.JPG';
 import Photo_Capabilities from './assets/Capabilities.png';
 import Photo_Kits from './assets/photos/P1050486.JPG';
 import Photo_VertConsole from './assets/photos/P1050484_rot.JPG';
 import Photo_ESP32 from './assets/photos/P1050498.JPG';
-import Photo_HorizontalConsole from './assets/photos/P1050500.JPG';
+import Photo_HorizontalConsole from './assets/photos/P1050500.JPG';*/
 
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
 import '../src/scripts/specsScript.js';
@@ -38,7 +39,6 @@ import '../src/scripts/scripts.js';
 import './App.css';
 
 function App() {
-
   return (
     <div className='container-fluid m-0'>
     <nav className="navbar sticky-top navbar-expand-lg" id="MainNav">
@@ -62,18 +62,7 @@ function App() {
     </nav>
     <div className="container text-center">
       <div className="row">
-        <video autoPlay muted loop preload="auto" id="myVideo">
-          <source src="img/Footage.mp4" type="video/mp4"/>
-        </video>
-        <h1 className="text-alt-heading"><span className="txt-rotate" data-period="1000" data-rotate='["13 consoles.", "15000 games.", "1 system.", "1 ESP32."]'></span></h1>
-        <h3 className="allNewText">The all new<span className="text-font-alt modelName"> Nevolta V</span></h3>
-        <a className="emptyLink" href="kits.html">
-          <button className="getYoursBtn">
-            <div className="getYoursBtnText">
-              Get Yours
-            </div>
-          </button>
-        </a>
+        <LandingPageFront title="The all new" modelName="Nevolta V" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8" />
       </div>
       <div className="row">
         <GridCard 
@@ -176,7 +165,7 @@ function App() {
               just nostalgia.
             </h1>
             <p className="columnText">
-              Escape the constant buzz of modern life and dive into your favorite retro games. With the <span className="text-font-alt"> Model V</span>, it’s just you and the classNameics. No notifications, no reminders. Pure, uninterrupted fun.
+              Escape the constant buzz of modern life and dive into your favorite retro games. With the <span className="text-font-alt"> Model V</span>, it’s just you and the classics. No notifications, no reminders. Pure, uninterrupted fun.
             </p>
           </div>
         </div>
