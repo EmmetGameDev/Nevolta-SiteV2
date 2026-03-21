@@ -7,6 +7,8 @@ import GridCard from './components/helper/GridCard.tsx';
 import ConsoleScroller from './components/ConsoleScroller.tsx';
 import LandingPageFront from './components/LandingPageFront.tsx';
 import LandingPageFrontSplit from './components/LandingPageFrontSplit.tsx';
+import DualColumnContentRow from './components/DualColumnContentRow.tsx';
+import FeaturesList from './components/FeaturesList.tsx';
 
 // import obrazka jako obiekt React
 import { NevoltaTextLogo } from './assets/svgs/index.js';
@@ -52,71 +54,26 @@ function App() {
       <div className="row">
         <ConsoleScroller />
       </div>
-      <div className="row contentRow">
-        <div className="col-md">
-          <div className="photoColumn">
-            <img className="photoColumnImg" src={PhotoConsoleFrontVert} alt="Console"/>
-          </div>
-        </div>
-        <div className="col-md">
-          <div className="contentColumn">
-            <h1 className="text-font-alt columnHeading">
-              Where the old <br/>
-              meets the new
-            </h1>
-            <p className="columnText">
-              The<span className="text-font-alt"> Model V </span> brings retro gaming to life in a fresh new way. It emulates your favorite old-school systems while wrapped in a smooth form made for today.
-            </p>
-            <div className="textPointerHolder">
-              <p className="columnText textPointer textPointerFirst">
-                - Smooth, matte finish <img src={Tap} className="smallIcon" alt="finish"/>
-              </p>
-              <p className="columnText textPointer">
-                - Black or white shell <img src={Twotone} className="smallIcon" alt="twotone"/>
-              </p>
-              <p className="columnText textPointer">
-                - Rounded corners <img src={Rounded} className="smallIcon" alt="corners"/>
-              </p>
-              <p className="columnText textPointer">
-                - Quiet, tactile buttons <img src={Buttons} className="smallIcon" alt="button"/>
-              </p>
-              <p className="columnText textPointer">
-                - Responsive DPad <img src={Dpad} className="smallIcon" alt="button"/>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row contentRow">
-
-      </div>
-      <div className="row contentRow">
-        <div className="col-md order-2 order-md-1">
-          <div className="contentColumn">
-            <h1 className="text-font-alt columnHeadingR">
-              The ESP32-S3 <br/>
-              beating heart
-            </h1>
-            <p className="columnTextR">
-              Powered by the featherlight ESP32-S3 chip, the <span className="text-font-alt"> Model V </span> packs big performance into a tiny package. Enjoy lightning-fast emulation, without sacrificing battery. Retro never felt so effortless.
-            </p>
-            <div className="chartHolder">
-              <div id="chart" className="chart"></div>
-            </div>
-            <p className="columnTextR">
-                The Nevolta V is ~10 000 times more powerful than the original Game Boy, and ~500 times stronger than the SNES*.
-            </p>
-            <p className="columnTextR smallAstrix">
-                * simplified data
-            </p>
-          </div>
-        </div>
-        <div className="col-md order-1 order-md-2">
-          <div className="photoColumn">
-            <img className="photoColumnImg" src={PhotoVertESP32} alt="Console"/>
-          </div>
-        </div>
-      </div>
+      <DualColumnContentRow 
+        photoAltText="Console"
+        photoSrc={PhotoConsoleFrontVert}
+        heading_line1="Where the old"
+        heading_line2="meets the new"
+        description_line1="The Model V brings retro gaming to life in a fresh new way. It emulates your favorite old-school systems while wrapped in a smooth form made for today."
+        description_line2="Experience the best of both worlds with the Nevolta V."
+        extraComponent={FeaturesList()}
+        ifLeftPhoto={true}
+      />
+      <DualColumnContentRow
+        photoAltText="ESP32"
+        photoSrc={PhotoVertESP32}
+        heading_line1="The ESP32-S3"
+        heading_line2="beating heart"
+        description_line1="Powered by the featherlight ESP32-S3 chip, the Model V  packs big performance into a tiny package. Enjoy lightning-fast emulation, without sacrificing battery. Retro never felt so effortless."
+        description_line2="The Nevolta V is ~10 000 times more powerful than the original Game Boy, and ~500 times stronger than the SNES*."
+        extraComponent={null}
+        ifLeftPhoto={false}
+      />
       <div className="row contentRow">
         <div className="photoColumn photoHorizontal">
             <img className="photoColumnImg" src={PhotoSky} alt="Console"/>

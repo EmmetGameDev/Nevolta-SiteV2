@@ -22,7 +22,7 @@ function LandingPageFrontSplit(props: landingPageFrontSplitProps){
             <div className="col-md-4">
                 <div className="splitVertCenterer">
                     <h3 className="allNewText">{props.title}<ModelNameText modelName={props.modelName} /></h3>
-                    <LargeButton text="Buy Now" href="kits.html" />
+                    <LargeButton text="Get Yours" href="kits.html" />
                 </div>
             </div>
         </>
