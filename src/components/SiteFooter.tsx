@@ -1,4 +1,5 @@
 import { NevoltaTextLogo } from "../assets/svgs";
+import FooterNavLink from "./helper/FooterNavLink";
 
 function SiteFooter(){
     return (
@@ -11,18 +12,10 @@ function SiteFooter(){
             </div>
             <div className="col-md-4">
               <ul className="footerLinksList">
-                <li className="footerItem">
-                  <a className="underline-anim" href="about.html">About us</a>
-                </li>
-                <li className="footerItem">
-                  <a className="underline-anim" href="contact.html">Contact us</a>
-                </li>
-                <li className="footerItem">
-                  <a className="underline-anim" href="products.html">Our products</a>
-                </li>
-                <li className="footerItem">
-                  <a className="underline-anim" href="#">Home page</a>
-                </li>
+                <FooterNavLink text="About us" href="/about" />
+                <FooterNavLink text="Contact us" href="/contact" />
+                <FooterNavLink text="Our products" href="/products" />
+                <FooterNavLink text="Home page" href="/" />
               </ul>
             </div>
           </div>

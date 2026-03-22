@@ -4,6 +4,8 @@ import DualColumnContentRow from "../DualColumnContentRow.js";
 
 import { PhotoGrid, PhotoMe, PhotoPlant } from "../../assets/photos/index.js";
 import './AboutSite.css';
+import ScrollToTop from "../helper/ScrollToTop.tsx";
+
 const text_split1 =
     (
         <div className="col-md">
@@ -58,7 +60,8 @@ const text_under_image = (
 function AboutSite(){
     return (
         <div className="container-fluid m-0 p-0">
-            <Navbar/>
+          <ScrollToTop/>
+          <Navbar/>
         <div className="container-fluid">
         <div className="mainPhotoDiv mainPhotoAboutDiv" style={{
             backgroundImage: `url(${PhotoPlant})`

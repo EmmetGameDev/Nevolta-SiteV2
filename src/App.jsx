@@ -1,13 +1,13 @@
-//import { useState } from 'react';
 // komponenty React
 import Navbar from './components/Navbar.tsx';
 import GridCard from './components/helper/GridCard.tsx';
 import ConsoleScroller from './components/ConsoleScroller.tsx';
-import LandingPageFront from './components/LandingPageFront.tsx';
 import LandingPageFrontSplit from './components/LandingPageFrontSplit.tsx';
 import DualColumnContentRow from './components/DualColumnContentRow.tsx';
 import FeaturesList from './components/FeaturesList.tsx';
 import FullWidthPhotoRow from './components/helper/FullWidthPhotoRow.tsx';
+import SiteFooter from './components/SiteFooter.tsx';
+import ScrollToTop from './components/helper/ScrollToTop.tsx';
 
 // import obrazka jako obiekt React
 import { NevoltaTextLogo } from './assets/svgs/index.js';
@@ -19,6 +19,7 @@ import './App.css';
 function App() {
   return (
       <div className='container-fluid m-0 p-0'>
+      <ScrollToTop/>
       <Navbar/>
       <div className="container text-center">
         <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta V!" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8?controls=0&modestbranding=1&rel=0" />
@@ -89,35 +90,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="siteFooter">
-        <div className="container text-center">
-          <div className="row">
-            <div className="col-md-8 footerCol">
-              <img className="footerLogo" src={NevoltaTextLogo} alt="Logo" width="100%" height="50px"/>
-              <p className="textCopyright">© 2026, Tomasz Gerka</p>
-            </div>
-            <div className="col-md-4">
-              <ul className="footerLinksList">
-                <li className="footerItem">
-                  <a className="underline-anim" href="about.html">About us</a>
-                </li>
-                <li className="footerItem">
-                  <a className="underline-anim" href="contact.html">Contact us</a>
-                </li>
-                <li className="footerItem">
-                  <a className="underline-anim" href="products.html">Our products</a>
-                </li>
-                <li className="footerItem">
-                  <a className="underline-anim" href="#">Home page</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
+      <SiteFooter/>
       </div>
   )
 }

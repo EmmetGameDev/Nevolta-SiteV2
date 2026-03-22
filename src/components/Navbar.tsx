@@ -1,4 +1,4 @@
-import NavLinkHelper from './helper/NavLink.js';
+import NavLinkHelper from './helper/NavLink.tsx';
 import { Products, Home, AboutUs, Envelope } from '../assets/icons/index.js';
 import { NevoltaTextLogo } from '../assets/svgs/index.js';
 import { NavLink } from 'react-router';
