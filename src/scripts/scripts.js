@@ -67,11 +67,11 @@ window.onload = function () {
 
 // Sliding pointers with delay
 
+/*
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-/*
 function showPointer(el, yn){
   el.classList.toggle('pointer-animation', !!yn);
 }
@@ -182,6 +182,7 @@ chart.render();
 chart.hideSeries("Consoles");
 */
 
+/*
 const chartObsCallback = (entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting){
@@ -191,6 +192,7 @@ const chartObsCallback = (entries) => {
     }
   }
 }
+*/
 
 /*
 const chartObs = new IntersectionObserver(chartObsCallback, { threshold: 0.25 });

@@ -1,0 +1,18 @@
+.mainPhotoDiv{
+    height: 430px;
+    background-image: url('../img/photos/P1050515.JPG');
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.mainPhotoAboutDiv{
+    background-image: url('../img/photos/P1050572.JPG');
+}

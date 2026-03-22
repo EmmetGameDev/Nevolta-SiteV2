@@ -1,15 +1,17 @@
+import { NavLink } from 'react-router';
+
 interface NavLinkProps {
     text: string;
     href: string;
     iconSrc: string;
 }
 
-function NavLink({text, href, iconSrc}: NavLinkProps) {
+function NavLinkHelper({text, href, iconSrc}: NavLinkProps) {
     return (
-        <a className="nav-link active underline-anim" aria-current="page" href={href}>
+        <NavLink to={href} className="nav-link active underline-anim" aria-current="page">
             {text} <img className="nav-icon" alt={text.charAt(0)} width="16px" height="16px" src={iconSrc}/>
-        </a>
+        </NavLink>
     )
 }
 
-export default NavLink;
+export default NavLinkHelper;
