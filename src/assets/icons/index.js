@@ -18,3 +18,8 @@ export { default as Star } from './star.svg';
 export { default as Star2 } from './star2.svg';
 export { default as Tap } from './tap.svg';
 export { default as Twotone } from './twotone.svg';
+export { default as Customizable } from './customizable.svg';
+export { default as OpenSource } from './openSource.svg';
+export { default as Powerful } from './doubleCore.svg';
+export { default as Ergonomic } from './ergonomic.svg';
+export { default as Battery } from './battery.svg';

@@ -1141,7 +1141,7 @@ h1 {
 @keyframes textRevealUp {
     from {
         opacity: 0;
-        translate: 0 4rem;
+        translate: 0 6rem;
     }
     to {
         opacity: 1;
@@ -1152,4 +1152,89 @@ h1 {
 .float-right{
     float: right;
     text-align: right;
+}
+
+.featureGrid{
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    gap : 1rem;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.featureGridPointer{
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featureGridPointer:hover::before {
+    transform: scaleY(1); /* fills upward */
+}
+
+.featureGridPointer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transform: scaleY(0); /* hidden initially */
+    transform-origin: bottom;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.defPointerContent {
+    position: relative;
+    z-index: 1;
+}
+
+.hoverPointerContent {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.3s ease;
+    padding: 2vw;
+}
+
+.featureGridPointer:hover .hoverPointerContent {
+    opacity: 1;
+}
+
+.featureGridPointerIcon{
+    min-width: 4rem;
+    max-width: 10vw;
+    margin-right: 5px;
+    padding: 1vw;
+}
+
+.gridBoxScroll1{
+    animation: textRevealUp both;
+    animation-timeline: view(30% auto);
+    animation-range: entry 30% cover 50vh;
+}
+
+.gridBoxScroll2{
+    animation: textRevealUp both;
+    animation-timeline: view(40% auto);
+    animation-range: entry 40% cover 70vh;
+}
+
+.gridBoxScroll3{
+    animation: textRevealUp both;
+    animation-timeline: view(30% auto);
+    animation-range: entry 30% cover 30vh;
+}
+
+.gridBoxScroll4{
+    animation: textRevealUp both;
+    animation-timeline: view(40% auto);
+    animation-range: entry 40% cover 40vh;
 }
