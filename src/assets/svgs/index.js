@@ -9,3 +9,4 @@ export { default as NevoltaTextLogo } from './NevoltaTextLogo.svg';
 export { default as NevoltaTextLogoWhite } from './NevoltaTextLogo_White.svg';
 export { default as WavesBg } from './wavesBg.svg';
 export { default as WavesBgDark } from './wavesBg_Dark.svg';
+export { default as Error404 } from './Error404.svg';

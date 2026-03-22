@@ -1,6 +1,8 @@
 import Navbar from "../Navbar";
 import SiteFooter from "../SiteFooter";
 import DualColumnContentRow from "../DualColumnContentRow.js";
+import PageTopperPhoto from "../helper/PageTopperPhoto.tsx";
+import PageTopperHeading from "../helper/PageTopperHeading.tsx";
 
 import { PhotoGrid, PhotoMe, PhotoPlant } from "../../assets/photos/index.js";
 import './AboutSite.css';
@@ -58,30 +60,21 @@ const text_under_image = (
 
 
 function AboutSite(){
-    return (
-        <div className="container-fluid m-0 p-0">
-          <ScrollToTop/>
-          <Navbar/>
-        <div className="container-fluid">
-        <div className="mainPhotoDiv mainPhotoAboutDiv" style={{
-            backgroundImage: `url(${PhotoPlant})`
-        }}></div>
-        </div>
-        <div className="container text-center">
-            <div className="row blogRow">
-                <div className="col-lg-12">
-                <h1 className="blogHeading text-font-alt"><b>About us</b></h1>
-                </div>
-            </div>
-        <DualColumnContentRow photoAltText="console_grid" photoSrc={PhotoGrid} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1}/>
-        <DualColumnContentRow photoAltText="thisisme!" photoSrc={PhotoMe}  heading_line1="" heading_line2="" description_line1="" description_line2="" ifLeftPhoto={true} extraComponent={text_split2}/>
-        <DualColumnContentRow photoAltText="" photoSrc={""} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_under_image}/>
-        </div>
-        <SiteFooter/>
-
-    <script src="js/specsScript.js"></script>
-        </div>
-    )
+  return (
+    <div className="container-fluid m-0 p-0">
+      <ScrollToTop/>
+      <Navbar/>
+      <PageTopperPhoto photoSrc={PhotoPlant} />
+      <div className="container text-center">
+        <PageTopperHeading title="About Nevolta Systems"/>
+        <DualColumnContentRow photoAltText="console_grid" photoSrc={PhotoGrid} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>
+        <DualColumnContentRow photoAltText="thisisme!" photoSrc={PhotoMe}  heading_line1="" heading_line2="" description_line1="" description_line2="" ifLeftPhoto={true} extraComponent={text_split2} pushMobilePhoto={false}/>
+        <DualColumnContentRow photoAltText="" photoSrc={""} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_under_image} pushMobilePhoto={true}/>
+      </div>
+      <SiteFooter/>
+      <script src="js/specsScript.js"></script>
+    </div>
+  )
 }
 
 export default AboutSite;

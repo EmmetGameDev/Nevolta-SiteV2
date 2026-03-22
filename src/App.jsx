@@ -66,6 +66,7 @@ function App() {
             description_line2="The Nevolta V is ~10 000 times more powerful than the original Game Boy, and ~500 times stronger than the SNES*."
             extraComponent={FeatureGrid()}
             ifLeftPhoto={false}
+            pushMobilePhoto={true}
           />
           <FullWidthPhotoRow photoSrc={PhotoSky} photoAltText="Sky" />
           <DualColumnTextRow

@@ -1178,13 +1178,29 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(8px);
     transform: scaleY(0); /* hidden initially */
     transform-origin: bottom;
     transition: transform 0.4s ease;
     z-index: 2;
+}
+
+.blurOverlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.2);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.featureGridPointer:hover .blurOverlay {
+    transform: scaleY(1);
 }
 
 .defPointerContent {

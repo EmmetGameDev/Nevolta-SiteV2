@@ -12,6 +12,7 @@ function FeatureGridPointer({ iconSrc, text, textHover, bonusClass }: FeatureGri
                 <img src={iconSrc} alt="" className="featureGridPointerIcon"/>
                 <p className="featureGridPointerText text-font-alt">{text}</p>
             </div>
+            <div className="blurOverlay"/>
             <div className="hoverPointerContent">
                 <p>{textHover}</p>
             </div>
