@@ -41,7 +41,7 @@ function App() {
             />
             <GridCard
               header="Kits"
-              description="Buy plug and play, DIY, and bundled kits."
+              description="Buy plug and play or DIY kits for the new Nevolta V."
               imgSrc={PhotoQuarter}
               btnHref="kits.html"
             />

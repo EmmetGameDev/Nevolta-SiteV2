@@ -10,10 +10,6 @@ Wszystkie obrazy i ikony powinny znajdować się w folderach /public lub /src/as
 
 # Roadmap for the future
 
-- Implementacja i komponentyzacja podstrony Products
-- Implementacja i komponentyzacja podstrony Contact
-
-Opcjonalnie:
     - Stworzenie podstrony ModelV, do której podpięte będą kits.html, specs.html, capabilities.html (to prowadzi do kategoryzacji podstron na przyszlosc, kiedy konsol bedzie wiecej)
 Lub:
     - Implementacja i komponentyzacja podstrony ModelVKits
