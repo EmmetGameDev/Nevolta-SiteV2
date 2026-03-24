@@ -43,7 +43,7 @@ function App() {
               header="Kits"
               description="Buy plug and play or DIY kits for the new Nevolta V."
               imgSrc={PhotoQuarter}
-              btnHref="kits.html"
+              btnHref="/model-v"
             />
           </div>
           <ConsoleScroller/>
@@ -73,7 +73,7 @@ function App() {
             Headingline1="No distractions,"
             Headingline2="just nostalgia."
             Paragraph="Escape the constant buzz of modern life and dive into your favorite retro games. With the Model V, it’s just you and the classics. No notifications, no reminders. Pure, uninterrupted fun."
-            OtherElement={LargeButton({ text: "Get Yours", href: "/kits" }) }
+            OtherElement={LargeButton({ text: "Get Yours", href: "/model-v" }) }
           />
         </div>
         <SiteFooter/>

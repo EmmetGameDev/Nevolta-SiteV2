@@ -3,9 +3,10 @@ import ScrollToTop from '../helper/ScrollToTop.tsx';
 import Navbar from '../Navbar.tsx';
 import SiteFooter from '../SiteFooter.tsx';
 import ProductColumn from '../helper/ProductColumn.tsx';
-
-import { PhotoGrid, PhotoQuarter, PhotoPCBQuarter } from '../../assets/photos/index.js';
 import PageTopperPhoto from '../helper/PageTopperPhoto.tsx';
+
+import { PhotoGrid, PhotoPCBQuarter } from '../../assets/photos/index.js';
+import { ModelVData } from '../../scripts/consoleOfferingData.ts';
 
 function ProductsSite(){
     return(
@@ -16,7 +17,7 @@ function ProductsSite(){
             <div className="container">
                 <PageTopperHeading title="Products" />
                 <div className='row'>
-                    <ProductColumn title="Nevolta V" price={49.99} previousPrice={64.99} imageSrc={PhotoQuarter} productLink="kits.html" isWorkInProgress={false}/>
+                    <ProductColumn title={ModelVData.name} price={ModelVData.price} previousPrice={ModelVData.previousPrice} imageSrc={ModelVData.thumbnail} productLink={ModelVData.kitsPagePath} isWorkInProgress={false}/>
                     <ProductColumn title="" price={0} previousPrice={0} imageSrc={PhotoPCBQuarter} productLink="" isWorkInProgress={true}/>
                 </div>
             </div>
