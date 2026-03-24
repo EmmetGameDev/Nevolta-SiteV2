@@ -31,13 +31,13 @@ function App() {
               header="Specifications"
               description="See the hardware specs of the Nevolta V."
               imgSrc={PhotoPCBQuarter}
-              btnHref="specs.html"
+              btnHref="/model-v/specs"
             />
             <GridCard
               header="Capabilities"
               description="Learn what is possible with the Nevolta V."
               imgSrc={PhotoCapabilities}
-              btnHref="capabilities.html"
+              btnHref="/model-v/capabilities"
             />
             <GridCard
               header="Kits"
