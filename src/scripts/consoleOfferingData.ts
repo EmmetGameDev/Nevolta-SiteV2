@@ -56,5 +56,5 @@ export const ModelVData: Console = {
     price: 49.99,
     previousPrice: 64.99,
     diyKitPriceDrop: 5,
-    kitsPagePath: "/model-v"
+    kitsPagePath: "/Nevolta-SiteV2/model-v"
 }

@@ -12,7 +12,7 @@ function NotFoundPage(){
                     <img className='errorImg' src={Error404} alt="404 error"/>
                 </div>
                 <PageTopperHeading title="Page Not Found" />
-                <p style={{ textAlign: 'left', float: 'left' }}>Hello wanderer, you seem to be lost. Come back to the <a href="/" className='customLink'>homepage</a>!</p>
+                <p style={{ textAlign: 'left', float: 'left' }}>Hello wanderer, you seem to be lost. Come back to the <a href="/Nevolta-SiteV2" className='customLink'>homepage</a>!</p>
             </div>
         </div>
     )

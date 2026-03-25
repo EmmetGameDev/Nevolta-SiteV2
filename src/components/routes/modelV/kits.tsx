@@ -24,12 +24,12 @@ function KitsPage(){
                             The <span className="text-font-alt">Nevolta V</span> is the entry-level Nevolta experience, we 
                             provide. This device is a great way of getting to know all of the fan-favourite retro game
                             titles, enabling the user to emulate on the go.<br/>
-                            To check out more about what the console can do, check the <a href="/model-v/capabilities" className="customLink">Capabilities Page</a>
+                            To check out more about what the console can do, check the <a href="/Nevolta-SiteV2/model-v/capabilities" className="customLink">Capabilities Page</a>
                         </p>
                         <p className="kitsTextBlock">
                             We have put together a powerful, and yet, a mobile device. With the ESP32S3 chip at its heart,
                             the console is capable of smooth emulation, for extended periods of time.
-                            To learn more about the consoles hardware, visit the <a href="/model-v/specs" className="customLink">Specifications Page</a>
+                            To learn more about the consoles hardware, visit the <a href="/Nevolta-SiteV2/model-v/specs" className="customLink">Specifications Page</a>
                         </p>
                     </div>
                 </div>

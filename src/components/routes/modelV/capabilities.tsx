@@ -56,7 +56,7 @@ const text_split1 = (
                 </p>
                 <p className="blogTextBlock">
                 The sky is the limit! When it comes to storage, the microSD card is responsible for 
-                the ammount of games you can have available at once. On the <a href="/model-v/specs" className="customLink">32GB microSD card we recommend</a> you can store up to 15 000 games!
+                the ammount of games you can have available at once. On the <a href="/Nevolta-SiteV2/model-v/specs" className="customLink">32GB microSD card we recommend</a> you can store up to 15 000 games!
                 </p>
             </div>
     </>

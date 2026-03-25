@@ -10,7 +10,7 @@ import InColumnPhotoSmall from "../../helper/InColumnPhotoSmall.js";
 import { PhotoPCBClose, ExplainTop, ExplainSide, PhotoMicroSD, PhotoIOPorts } from "../../../assets/photos/index.js";
 
 const microSDText = (
-    <p className="blogText scrollTextShowUp">The games are stored on a microSD card. We recommend using the one above (Sandisk Ultra 32GB SDHC), since it was the primary card used during testing. <br/> Click <a href="capabilities.html" className="customLink">here</a> to see more details of file storage on the device.</p>
+    <p className="blogText scrollTextShowUp">The games are stored on a microSD card. We recommend using the one above (Sandisk Ultra 32GB SDHC), since it was the primary card used during testing. <br/> Click <a href="/Nevolta-SiteV2/model-v/capabilities" className="customLink">here</a> to see more details of file storage on the device.</p>
 )
 
 function SpecsPage(){

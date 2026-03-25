@@ -31,19 +31,19 @@ function App() {
               header="Specifications"
               description="See the hardware specs of the Nevolta V."
               imgSrc={PhotoPCBQuarter}
-              btnHref="/model-v/specs"
+              btnHref="/Nevolta-SiteV2/model-v/specs"
             />
             <GridCard
               header="Capabilities"
               description="Learn what is possible with the Nevolta V."
               imgSrc={PhotoCapabilities}
-              btnHref="/model-v/capabilities"
+              btnHref="/Nevolta-SiteV2/model-v/capabilities"
             />
             <GridCard
               header="Kits"
               description="Buy plug and play or DIY kits for the new Nevolta V."
               imgSrc={PhotoQuarter}
-              btnHref="/model-v"
+              btnHref="/Nevolta-SiteV2/model-v"
             />
           </div>
           <ConsoleScroller/>
@@ -73,7 +73,7 @@ function App() {
             Headingline1="No distractions,"
             Headingline2="just nostalgia."
             Paragraph="Escape the constant buzz of modern life and dive into your favorite retro games. With the Model V, it’s just you and the classics. No notifications, no reminders. Pure, uninterrupted fun."
-            OtherElement={LargeButton({ text: "Get Yours", href: "/model-v" }) }
+            OtherElement={LargeButton({ text: "Get Yours", href: "/Nevolta-SiteV2/model-v" }) }
           />
         </div>
         <SiteFooter/>
