@@ -10,8 +10,6 @@ Wszystkie obrazy i ikony powinny znajdować się w folderach /public lub /src/as
 
 # Roadmap for the future
 
-    - Stworzenie podstrony ModelV, do której podpięte będą kits.html, specs.html, capabilities.html (to prowadzi do kategoryzacji podstron na przyszlosc, kiedy konsol bedzie wiecej)
-Lub:
-    - Implementacja i komponentyzacja podstrony ModelVKits
-    - Implementacja i komponentyzacja podstrony ModelVSpecs
-    - Implementacja i komponentyzacja podstrony ModelVCapabilities
+    - Add a "Blog" subpage and implement simple (heavily component-reliant) blog pages
+
+    - Publish this goddamn site already!

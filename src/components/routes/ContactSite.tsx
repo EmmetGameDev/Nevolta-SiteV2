@@ -21,11 +21,11 @@ const contact_info = (
 
 function ContactPage(){
     return (
-        <div className="container-fluid m-0 p-0">
+        <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
             <ScrollToTop/>
             <Navbar/>
             <PageTopperPhoto photoSrc={PhotoWhiteHoldPlant2} />
-            <div className="container text-center">
+            <div className="container text-center flex-grow-1">
                 <PageTopperHeading title="Contact Us"/>
                 <DualComponentRow component1={contact_info} component2={Accordion({ title: "FAQ", content: "Sample FAQ content" })}/>
             </div>

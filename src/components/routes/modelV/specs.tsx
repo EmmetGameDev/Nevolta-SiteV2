@@ -15,11 +15,11 @@ const microSDText = (
 
 function SpecsPage(){
   return (
-    <div className="container-fluid m-0 p-0">
+    <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
       <ScrollToTop/>
       <Navbar/>
       <PageTopperPhoto photoSrc={PhotoPCBClose} />
-      <div className="container text-center">
+      <div className="container text-center flex-grow-1">
         <PageTopperHeading title="Model V Specifications"/>
         <WireframePhoto photoSrc={ExplainTop}/>
         <WireframePhoto photoSrc={ExplainSide}/>

@@ -444,14 +444,14 @@ h1 {
     font-size: 40px;
     float: left;
     margin-bottom: 20px;
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
 
 .columnHeadingR{
     font-size: 40px;
     float: right;
     margin-bottom: 20px;
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
 
 .headingPhotoHorizontal{
@@ -1280,4 +1280,8 @@ h1 {
     animation: textRevealUp both;
     animation-timeline: view(40% auto);
     animation-range: entry 40% cover 40vh;
+}
+
+.blogSmallText{
+    margin-top: 2vw;
 }

@@ -21,10 +21,10 @@ import './index.css';
 
 function App() {
   return (
-      <div className='container-fluid m-0 p-0'>
+      <div className='container-fluid m-0 p-0 d-flex flex-column min-vh-100'>
         <ScrollToTop/>
         <Navbar/>
-        <div className="container text-center">
+        <div className="container text-center flex-grow-1">
           <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta V!" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8?controls=0&modestbranding=1&rel=0" />
           <div className="row">
             <GridCard

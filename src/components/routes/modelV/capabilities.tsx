@@ -64,11 +64,11 @@ const text_split1 = (
 
 function CapabilitiesPage(){
     return (
-        <div className="container-fluid m-0 p-0">
+        <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
             <ScrollToTop/>
             <Navbar/>
             <PageTopperPhoto photoSrc={PhotoNES} />
-            <div className="container text-center">
+            <div className="container text-center flex-grow-1">
                 <PageTopperHeading title="Model V Capabilities"/>
                 <ConsoleIconScroller/>
                 <DualColumnContentRow photoAltText="esp32" photoSrc={PhotoVertESP32} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>

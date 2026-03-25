@@ -10,11 +10,11 @@ import { ModelVData } from '../../scripts/consoleOfferingData.ts';
 
 function ProductsSite(){
     return(
-        <div className="container-fluid m-0 p-0">
+        <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
             <ScrollToTop/>
             <Navbar/>
             <PageTopperPhoto photoSrc={PhotoGrid} />
-            <div className="container">
+            <div className="container text-center flex-grow-1">
                 <PageTopperHeading title="Products" />
                 <div className='row'>
                     <ProductColumn title={ModelVData.name} price={ModelVData.price} previousPrice={ModelVData.previousPrice} imageSrc={ModelVData.thumbnail} productLink={ModelVData.kitsPagePath} isWorkInProgress={false}/>

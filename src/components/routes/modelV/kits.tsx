@@ -8,10 +8,10 @@ import { PhotoLaunchSale } from "../../../assets/photos/index.js";
 
 function KitsPage(){
     return (
-        <div className="container-fluid m-0 p-0">
+        <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
             <ScrollToTop/>
             <Navbar/>
-            <div className="container text-center">
+            <div className="container text-center flex-grow-1">
                 <KitPageTopper cons={ModelVData}/>
                 <div className="row kitRow">
                     <div className="col-md-6 contactSpacer">
