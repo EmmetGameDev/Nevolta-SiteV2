@@ -1,0 +1,31 @@
+// ./photos/index.js
+
+export { default as ExplainSide } from './ExplainSide.png';
+export { default as ExplainTop } from './ExplainTop.png';
+export { default as PhotoBlackHeld } from './Photo_BlackHeld.webp';
+export { default as PhotoBlackHoldPlant } from './Photo_BlackHoldPlant.webp';
+export { default as PhotoConsoleFrontVert } from './Photo_ConsoleFrontVert.webp';
+export { default as PhotoFront } from './Photo_Front.webp';
+export { default as PhotoFrontClose } from './Photo_FrontClose.webp';
+export { default as PhotoGrid } from './Photo_Grid.webp';
+export { default as PhotoHeld } from './Photo_Held.webp';
+export { default as PhotoHeld2 } from './Photo_Held2.webp';
+export { default as PhotoIOPorts } from './Photo_IOPorts.webp';
+export { default as PhotoMario } from './Photo_Mario.webp';
+export { default as PhotoMario2 } from './Photo_Mario2.webp';
+export { default as PhotoMe } from './Photo_Me.webp';
+export { default as PhotoMe2 } from './Photo_Me2.webp';
+export { default as PhotoMicroSD } from './Photo_microSD.webp';
+export { default as PhotoNES } from './Photo_NES.webp';
+export { default as PhotoPCBClose } from './Photo_PCBClose.webp';
+export { default as PhotoPCBQuarter } from './Photo_PCBQuarter.webp';
+export { default as PhotoPlant } from './Photo_Plant.webp';
+export { default as PhotoQuarter } from './Photo_Quarter.webp';
+export { default as PhotoSky } from './Photo_Sky.webp';
+export { default as PhotoTetrisDX } from './Photo_TetrisDX.webp';
+export { default as PhotoVertESP32 } from './Photo_VertESP32.webp';
+export { default as PhotoWhiteHeld } from './Photo_WhiteHeld.webp';
+export { default as PhotoWhiteHoldPlant } from './Photo_WhiteHoldPlant.webp';
+export { default as PhotoWhiteHoldPlant2 } from './Photo_WhiteHoldPlant2.webp';
+export { default as PhotoCapabilities } from './Capabilities.png';
+export { default as PhotoLaunchSale } from './LaunchSale_Compressed.webp';
