@@ -10,13 +10,14 @@ import {default as ModelV_CapabilitiesPage} from './components/routes/modelV/cap
 import {default as ModelV_KitsPage} from './components/routes/modelV/kits.tsx';
 
 const router = createBrowserRouter([
-  { path: "/Nevolta-SiteV2/", Component: App },
-  { path: "/Nevolta-SiteV2/about", Component: AboutSite },
-  { path: "/Nevolta-SiteV2/contact", Component: ContactPage },
-  { path: "/Nevolta-SiteV2/products", Component: ProductsSite },
-  { path: "/Nevolta-SiteV2/model-v", Component: ModelV_KitsPage },
-  { path: "/Nevolta-SiteV2/model-v/specs", Component: ModelV_SpecsPage },
-  { path: "/Nevolta-SiteV2/model-v/capabilities", Component: ModelV_CapabilitiesPage },
+  { index: true, Component: App},
+  //{ path: "/", Component: App },
+  { path: "/about", Component: AboutSite },
+  { path: "/contact", Component: ContactPage },
+  { path: "/products", Component: ProductsSite },
+  { path: "/model-v", Component: ModelV_KitsPage },
+  { path: "/model-v/specs", Component: ModelV_SpecsPage },
+  { path: "/model-v/capabilities", Component: ModelV_CapabilitiesPage },
   { path: "*", Component: NotFoundPage }
 ])
 
