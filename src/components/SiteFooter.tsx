@@ -12,10 +12,10 @@ function SiteFooter(){
             </div>
             <div className="col-md-4">
               <ul className="footerLinksList">
-                <FooterNavLink text="About us" href="/Nevolta-SiteV2/about" />
-                <FooterNavLink text="Contact us" href="/Nevolta-SiteV2/contact" />
-                <FooterNavLink text="Our products" href="/Nevolta-SiteV2/products" />
-                <FooterNavLink text="Home page" href="/Nevolta-SiteV2/" />
+                <FooterNavLink text="About us" href="/about" />
+                <FooterNavLink text="Contact us" href="/contact" />
+                <FooterNavLink text="Our products" href="/products" />
+                <FooterNavLink text="Home page" href="/" />
               </ul>
             </div>
           </div>
