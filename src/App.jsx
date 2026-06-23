@@ -18,11 +18,8 @@ import { PhotoCapabilities, PhotoPCBQuarter, PhotoQuarter, PhotoConsoleFrontVert
 import './scripts/scripts.js';
 import './index.css';
 
-import { Analytics } from '@vercel/analytics/react';
-
 function App() {
   return (
-    <>
       <div className='container-fluid m-0 p-0 d-flex flex-column min-vh-100'>
         <ScrollToTop/>
         <Navbar/>
@@ -80,8 +77,6 @@ function App() {
         </div>
         <SiteFooter/>
       </div>
-      <Analytics />
-    </>
   )
 }
 

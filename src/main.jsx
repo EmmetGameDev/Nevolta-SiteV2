@@ -4,9 +4,11 @@ import { RouterProvider } from "react-router/dom";
 import router from "./routes.ts";
 import './index.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Analytics } from '@vercel/analytics/react';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
+    <Analytics />
   </StrictMode>,
 )
