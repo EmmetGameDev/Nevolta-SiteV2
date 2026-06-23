@@ -9,25 +9,40 @@ html{
 
 :root{
     --alt-color: #7893b3;
+    --blue-main: #0059FC;
+    --blue-light: #4485FC;
 }
 
-body{
+body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    width: 100%; 
-    height: auto;
-    background-color: #eaebeb;
-    background-position: center bottom;
-    background-image: url('./assets/svgs/wavesBg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    margin: 0;
     min-height: 100vh;
+
+    background-color: #eaebeb;
+
     display: flex;
     flex-direction: column;
-    transition: background-image 0.5s ease;
-    -webkit-transition: background-image 0.5s ease;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url('./assets/svgs/wavesBg_Brightblue.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: blur(8px);
+    z-index: -1;
 }
 
 h1 {
@@ -272,14 +287,14 @@ h1 {
 }
 
 .cstmButton{
-    border: 2px solid black;
+    border: 2px solid var(--blue-main);
     border-radius: 10px;
     font-size: 16px;
     height: 1.7em;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: black;
+    background-color: var(--blue-main);
     color: white;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -287,7 +302,7 @@ h1 {
 
 .cstmButton:hover{
     background-color: transparent;
-    color: black;
+    color: var(--blue-main);
 }
 
 .allNewText{
@@ -339,10 +354,10 @@ h1 {
 }
 
 .getYoursBtn:hover{
-    border: 3px solid #107535;
+    border: 3px solid var(--blue-main);
     animation: none;
     background-color: transparent;
-    color: #107535;
+    color: var(--blue-main);
 }
 
 .blur-bg{
@@ -424,7 +439,7 @@ h1 {
 }
 
 .scrollIconBox{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--blue-light);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     border: none;
@@ -652,8 +667,8 @@ h1 {
 }
 
 .styled-table tbody tr{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid var(--blue-light);
+    border-bottom: 1px solid var(--blue-light);
 }
 
 .styled-table tbody tr:last-of-type{
@@ -673,6 +688,7 @@ h1 {
     margin-bottom: 15px;
     font-family: "Kode Mono", monospace;
     font-weight: 600;
+    color: var(--blue-main);
 }
 
 .squarePhotoHolder{
@@ -947,11 +963,11 @@ h1 {
 
 /* keyframes cycle through colors */
 @keyframes bgFade {
-    0%   { background: #2bc24b; }
-    25%  { background: #107535; }
-    50%  { background: #38a645; }
-    75%  { background: #107535; }    
-    100% { background: #2bc24b; }
+    0%   { background: #0059FC; }
+    25%  { background: #008EFC; }
+    50%  { background: #0028FC; }   
+    75%  { background: #008EFC; }
+    100% { background: #1A00FC; }
 }
 
 .smallHeading{
@@ -1022,7 +1038,7 @@ h1 {
 .accordion{
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: black;
+    --bs-accordion-active-bg: var(--blue-light);
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'><path d='m2 5 6 6 6-6'/></svg>");
 }
 

@@ -17,7 +17,7 @@ function ProductsSite(){
             <div className="container text-center flex-grow-1">
                 <PageTopperHeading title="Products" />
                 <div className='row'>
-                    <ProductColumn title={ModelVData.name} price={ModelVData.price} previousPrice={ModelVData.previousPrice} imageSrc={ModelVData.thumbnail} productLink={ModelVData.kitsPagePath} isWorkInProgress={false}/>
+                    {/*<ProductColumn title={ModelVData.name} price={ModelVData.price} previousPrice={ModelVData.previousPrice} imageSrc={ModelVData.thumbnail} productLink={ModelVData.kitsPagePath} isWorkInProgress={false}/>*/}
                     <ProductColumn title="" price={0} previousPrice={0} imageSrc={PhotoPCBQuarter} productLink="" isWorkInProgress={true}/>
                 </div>
             </div>

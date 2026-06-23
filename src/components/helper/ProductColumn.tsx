@@ -15,7 +15,7 @@ function ProductColumn({ title, price, previousPrice, imageSrc, productLink, isW
                     <img src={imageSrc} className="card-img-top productsCardImage" alt="Specs"/>
                     <div className="card-body">
                     <h5 className="card-title text-font-alt"> Work in progress!</h5>
-                    <p className="card-text">More <span className="text-font-alt">Nevolta</span> consoles in the working!</p>
+                    <p className="card-text">The official <span className="text-font-alt">Nevolta</span> store is in the making!</p>
                     </div>
                 </div>
             </div>

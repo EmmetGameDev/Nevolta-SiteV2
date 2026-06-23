@@ -25,7 +25,7 @@ function App() {
         <ScrollToTop/>
         <Navbar/>
         <div className="container text-center flex-grow-1">
-          <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta V!" videoSrc="https://www.youtube.com/embed/PUARhIlPBy8?controls=0&modestbranding=1&rel=0" />
+          <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta Nexus!" videoSrc="https://www.youtube.com/embed/XNRuj0vmZO0?controls=0&modestbranding=1&rel=0" />
           <div className="row">
             <GridCard
               header="Specifications"
@@ -43,7 +43,7 @@ function App() {
               header="Kits"
               description="Buy plug and play or DIY kits for the new Nevolta V."
               imgSrc={PhotoQuarter}
-              btnHref="/model-v"
+              btnHref="/products"
             />
           </div>
           <ConsoleScroller/>
@@ -73,7 +73,7 @@ function App() {
             Headingline1="No distractions,"
             Headingline2="just nostalgia."
             Paragraph="Escape the constant buzz of modern life and dive into your favorite retro games. With the Model V, it’s just you and the classics. No notifications, no reminders. Pure, uninterrupted fun."
-            OtherElement={LargeButton({ text: "Get Yours", href: "/model-v" }) }
+            OtherElement={LargeButton({ text: "Get Yours", href: "/products" }) }
           />
         </div>
         <SiteFooter/>

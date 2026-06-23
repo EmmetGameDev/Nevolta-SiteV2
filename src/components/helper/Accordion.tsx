@@ -48,8 +48,7 @@ function Accordion({ title, content }: AccordionProps){
               </h2>
               <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                  Nevolta, due to its founders young age, is yet to be registered as an official company. Because of that, we are unable to provide more
-                  mainstream payment options which are only available for companies.
+                  The official Nevolta store is still in the making, and is planned to be released in the near future.
                 </div>
               </div>
             </div>
