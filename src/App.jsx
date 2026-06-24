@@ -24,7 +24,7 @@ function App() {
         <ScrollToTop/>
         <Navbar/>
         <div className="container text-center flex-grow-1">
-          <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta Nexus!" videoSrc="https://www.youtube.com/embed/XNRuj0vmZO0?controls=0&modestbranding=1&rel=0" />
+          <LandingPageFrontSplit title="Watch the full build process of the all new " modelName="Nevolta Nexus!" videoSrc="https://www.youtube-nocookie.com/embed/XNRuj0vmZO0?controls=0&modestbranding=1&rel=0" />
           <div className="row">
             <GridCard
               header="Specifications"
