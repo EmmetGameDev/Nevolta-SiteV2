@@ -39,10 +39,10 @@ function App() {
               btnHref="/model-v/capabilities"
             />
             <GridCard
-              header="Kits"
-              description="Buy plug and play or DIY kits for the new Nevolta V."
+              header="Blog"
+              description="Read the latest news about our projects."
               imgSrc={PhotoQuarter}
-              btnHref="/products"
+              btnHref="/blog"
             />
           </div>
           <ConsoleScroller/>

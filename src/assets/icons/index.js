@@ -23,3 +23,5 @@ export { default as OpenSource } from './openSource.svg';
 export { default as Powerful } from './doubleCore.svg';
 export { default as Ergonomic } from './ergonomic.svg';
 export { default as Battery } from './battery.svg';
+export { default as Megaphone } from './megaphone.svg';
+export { default as Youtube } from './youtube.svg';

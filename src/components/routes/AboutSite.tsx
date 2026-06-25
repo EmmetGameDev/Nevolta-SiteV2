@@ -65,7 +65,7 @@ const text_split3 = (
         The only reason you are looking at it in a (I hope) working state, is because of my good friend <b>Mikołaj</b>.
       </p>
       <p className="blogTextBlock">
-        He was the guy to rewrite this website in React take it out of the stone age in terms of programming.
+        He was the guy to rewrite this website in React and take it out of the stone age in terms of programming.
       </p>
       <p className="blogTextBlock">
         Huge thanks to <b>Mikołaj</b> for taking on this task, and becoming part of the Nevolta Systems history! 

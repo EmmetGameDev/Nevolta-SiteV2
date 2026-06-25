@@ -11,11 +11,11 @@ function ProductColumn({ title, price, previousPrice, imageSrc, productLink, isW
     if(isWorkInProgress){
         return (
             <div className="col-md-6 productsCol">
-                <div className="card blur-bg productsCard">
+                <div className="card productsCard">
                     <img src={imageSrc} className="card-img-top productsCardImage" alt="Specs"/>
                     <div className="card-body">
                     <h5 className="card-title text-font-alt"> Work in progress!</h5>
-                    <p className="card-text">The official <span className="text-font-alt">Nevolta</span> store is in the making!</p>
+                    <p className="card-text">The official<span className="text-font-alt"> Nevolta store </span>is in the making!</p>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@ function ProductColumn({ title, price, previousPrice, imageSrc, productLink, isW
     }else{
         return(
             <div className="col-md-6 productsCol">
-                <div className="card blur-bg productsCard">
+                <div className="card productsCard">
                     <img src={imageSrc} className="card-img-top productsCardImage" alt={title}/>
                     <div className="card-body productsCardBody">
                     <h5 className="card-title text-font-alt">{title}</h5>

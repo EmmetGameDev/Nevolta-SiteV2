@@ -29,3 +29,5 @@ export { default as PhotoWhiteHoldPlant } from './Photo_WhiteHoldPlant.webp';
 export { default as PhotoWhiteHoldPlant2 } from './Photo_WhiteHoldPlant2.webp';
 export { default as PhotoCapabilities } from './Capabilities.png';
 export { default as PhotoLaunchSale } from './LaunchSale_Compressed.webp';
+export { default as ThumbnailESP32 } from './ThumbBetterRed_scaled.webp';
+export { default as ThumbnailNexus } from './ThumbnailNexus.webp';
