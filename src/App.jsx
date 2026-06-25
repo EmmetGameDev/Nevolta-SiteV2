@@ -51,7 +51,7 @@ function App() {
             photoSrc={PhotoConsoleFrontVert}
             heading_line1="Where the old"
             heading_line2="meets the new"
-            description_line1="The Model V brings retro gaming to life in a fresh new way. It emulates your favorite old-school systems while wrapped in a smooth form made for today."
+            description_line1="The Model V brings retro gaming to life in a fresh and new way. It emulates your favorite old-school systems while wrapped in a smooth form made for today."
             description_line2="Experience the best of both worlds with the Nevolta V."
             extraComponent={FeaturesList()}
             ifLeftPhoto={true}
@@ -62,7 +62,7 @@ function App() {
             heading_line1="The ESP32-S3"
             heading_line2="beating heart"
             description_line1="Powered by the featherlight ESP32-S3 chip, the Model V  packs big performance into a tiny package. Enjoy lightning-fast emulation, without sacrificing battery. Retro never felt so effortless."
-            description_line2="The Nevolta V is ~10 000 times more powerful than the original Game Boy, and ~500 times stronger than the SNES*."
+            description_line2="The Nevolta V is ~500 times more powerful than the original Game Boy, and ~150 times stronger than the SNES. (simplified)"
             extraComponent={FeatureGrid()}
             ifLeftPhoto={false}
             pushMobilePhoto={true}

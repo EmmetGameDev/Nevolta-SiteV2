@@ -4,13 +4,13 @@
 
 html{
     --secondary-theme-color: black;
-    --transparent-theme-color: rgba(255, 255, 255, 0.2);
+    --transparent-theme-color: rgba(255, 255, 255, 0.3);
 }
 
 :root{
     --alt-color: #7893b3;
-    --blue-main: #0059FC;
-    --blue-light: #4485FC;
+    --blue-main: 0, 89, 252;
+    --blue-light: 68, 133, 252;
 }
 
 body {
@@ -63,8 +63,8 @@ h1 {
 
 #MainNav.scrolled{
     background-color: var(--transparent-theme-color);
-    backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     border-bottom: 1px solid transparent;
 }
 
@@ -221,8 +221,8 @@ h1 {
 
 .siteFooter{
     background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     padding: 30px;
     padding-top: 5px;
 }
@@ -294,14 +294,14 @@ h1 {
 }
 
 .cstmButton{
-    border: 2px solid var(--blue-main);
+    border: 2px solid rgb(var(--blue-main));
     border-radius: 10px;
     font-size: 16px;
     height: 1.7em;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: var(--blue-main);
+    background-color: rgb(var(--blue-main));
     color: white;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -309,7 +309,7 @@ h1 {
 
 .cstmButton:hover{
     background-color: transparent;
-    color: var(--blue-main);
+    color: rgb(var(--blue-main));
 }
 
 .allNewText{
@@ -369,8 +369,8 @@ h1 {
 
 .blur-bg{
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
 }
 
 .mainCard{
@@ -447,8 +447,8 @@ h1 {
 
 .scrollIconBox{
     background-color: var(--blue-light);
-    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     border: none;
     height: 8em;
 }
@@ -653,8 +653,8 @@ h1 {
 
 .styled-table thead tr {
     background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     color: white;
     text-align: left;
 }
@@ -767,8 +767,8 @@ h1 {
 
 .bigCodeHolder{
     background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -776,8 +776,8 @@ h1 {
 
 .codeBlockLarge{
     background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     border-radius: 10px;
     white-space: pre-wrap;
     text-align: left;
@@ -1218,6 +1218,11 @@ h1 {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.featureGridPointer:hover{
+    border: 2px solid rgb(var(--blue-main));
 }
 
 .featureGridPointer:hover::before {
@@ -1228,9 +1233,6 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.3);
-    -webkit-backdrop-filter: blur(8px);
     transform: scaleY(0); /* hidden initially */
     transform-origin: bottom;
     transition: transform 0.4s ease;
@@ -1240,9 +1242,7 @@ h1 {
 .blurOverlay {
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,1);
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.4s ease;
@@ -1259,6 +1259,7 @@ h1 {
 }
 
 .hoverPointerContent {
+    color: rgb(var(--blue-main));
     position: absolute;
     inset: 0;
     display: flex;

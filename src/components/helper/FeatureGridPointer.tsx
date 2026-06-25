@@ -1,7 +1,7 @@
 interface FeatureGridPointerProps {
     iconSrc: string;
     text: string;
-    textHover: string;
+    textHover: string[];
     bonusClass: string;
 }
 
@@ -13,8 +13,15 @@ function FeatureGridPointer({ iconSrc, text, textHover, bonusClass }: FeatureGri
                 <p className="featureGridPointerText text-font-alt">{text}</p>
             </div>
             <div className="blurOverlay"/>
-            <div className="hoverPointerContent">
-                <p>{textHover}</p>
+            <div className="hoverPointerContent text-font-alt">
+                <p>
+                    {textHover.map((entry, index) => (
+                        <span key={index}>
+                            {entry}
+                            {index < textHover.length - 1 && <br />}
+                        </span>
+                    ))}
+                </p>
             </div>
         </div>
     )
