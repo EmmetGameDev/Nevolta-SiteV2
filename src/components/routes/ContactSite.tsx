@@ -6,7 +6,7 @@ import PageTopperHeading from "../helper/PageTopperHeading.tsx";
 import Accordion from "../helper/Accordion.tsx";
 
 import ScrollToTop from "../helper/ScrollToTop.tsx";
-import { PhotoWhiteHoldPlant2 } from "../../assets/photos/index.js";
+import { N32_FrontPlant } from "../../assets/photos/index.js";
 import { Envelope } from "../../assets/icons/index.js";
 
 const contact_info = (
@@ -24,7 +24,7 @@ function ContactPage(){
         <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
             <ScrollToTop/>
             <Navbar/>
-            <PageTopperPhoto photoSrc={PhotoWhiteHoldPlant2} />
+            <PageTopperPhoto photoSrc={N32_FrontPlant} />
             <div className="container text-center flex-grow-1">
                 <PageTopperHeading title="Contact Us"/>
                 <DualComponentRow component1={contact_info} component2={Accordion({ title: "FAQ", content: "Sample FAQ content" })}/>

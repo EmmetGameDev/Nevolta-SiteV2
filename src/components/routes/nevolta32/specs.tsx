@@ -7,10 +7,10 @@ import WireframePhoto from "../../helper/WireframePhoto";
 import TableList from "../../helper/TableList";
 import InColumnPhotoSmall from "../../helper/InColumnPhotoSmall.js";
 
-import { PhotoPCBClose, ExplainTop, ExplainSide, PhotoMicroSD, PhotoIOPorts } from "../../../assets/photos/index.js";
+import { N32_PCBClose, N32ExplainFront, N32ExplainSide, N32_microSD, N32_Charging } from "../../../assets/photos/index.js";
 
 const microSDText = (
-    <p className="blogText scrollTextShowUp">The games are stored on a microSD card. We recommend using the one above (Sandisk Ultra 32GB SDHC), since it was the primary card used during testing. <br/> Click <a href="/Nevolta-SiteV2/model-v/capabilities" className="customLink">here</a> to see more details of file storage on the device.</p>
+    <p className="blogText scrollTextShowUp">The games are stored on a microSD card. The only requirement is the FAT32 file system, however we recommend using the Sandisk Ultra 32GB SDHC (since it was the primary card used during testing). <br/> Click <a href="/nevolta32/capabilities" className="customLink">here</a> to see more details of file storage on the device.</p>
 )
 
 function SpecsPage(){
@@ -18,11 +18,11 @@ function SpecsPage(){
     <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
       <ScrollToTop/>
       <Navbar/>
-      <PageTopperPhoto photoSrc={PhotoPCBClose} />
+      <PageTopperPhoto photoSrc={N32_PCBClose} />
       <div className="container text-center flex-grow-1">
-        <PageTopperHeading title="Model V Specifications"/>
-        <WireframePhoto photoSrc={ExplainTop}/>
-        <WireframePhoto photoSrc={ExplainSide}/>
+        <PageTopperHeading title="Nevolta32 Specifications"/>
+        <WireframePhoto photoSrc={N32ExplainFront}/>
+        <WireframePhoto photoSrc={N32ExplainSide}/>
         <div className="row blogRow">
             <div className="col-md">
                 <TableList
@@ -71,12 +71,16 @@ function SpecsPage(){
                     tableTitle="Audio"
                     items={[
                         {
-                            header: "Type",
-                            descriptions: ["Mono speaker"]
+                            header: "Speaker",
+                            descriptions: ["Mono 3W (built-in)"]
                         },
                         {
-                            header: "Wattage",
-                            descriptions: ["3 W"]
+                            header: "Headphones",
+                            descriptions: ["3.5mm TRS jack"]
+                        },
+                        {
+                            header: "Sound control",
+                            descriptions: ["Speaker/Jack physical switch"]
                         }
                     ]}
                 />
@@ -85,7 +89,7 @@ function SpecsPage(){
                     items={[
                         {
                             header: "Battery",
-                            descriptions: ["11 Whr (15 hours of emulation)"]
+                            descriptions: ["2000mAh (15 hours of emulation)"]
                         },
                         {
                             header: "Charging",
@@ -98,7 +102,7 @@ function SpecsPage(){
                     items={[
                         {
                             header: "WiFi",
-                            descriptions: ["2.4GHz Wi-Fi (802.11 b/g/n)"]
+                            descriptions: ["2.4GHz Wi-Fi (Unused)"]
                         },
                         {
                             header: "Bluetooth",
@@ -126,13 +130,13 @@ function SpecsPage(){
             </div>
             <div className="col-md">
                 <InColumnPhotoSmall
-                    photoSrc={PhotoMicroSD}
+                    photoSrc={N32_microSD}
                     paragraphText=""
                     paragraphElement={microSDText}
                 />
                 <InColumnPhotoSmall
-                    photoSrc={PhotoIOPorts}
-                    paragraphText="All 3 ports on the console, are USB type C receptacles. Do not charge the device with a powerful charger, as it can damage the battery. Plugging it into a laptop or powerbank is recommended."
+                    photoSrc={N32_Charging}
+                    paragraphText="The Nevolta32 uses a standard USB-C port for charging. The battery level can be monitored in the software, and by the LED indicators. Blue = fully charged, Red = charging."
                     paragraphElement={null}
                 />
             </div>

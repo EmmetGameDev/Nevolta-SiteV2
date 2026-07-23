@@ -4,7 +4,7 @@ import DualColumnContentRow from "../DualColumnContentRow.js";
 import PageTopperPhoto from "../helper/PageTopperPhoto.tsx";
 import PageTopperHeading from "../helper/PageTopperHeading.tsx";
 
-import { PhotoGrid, PhotoMe, PhotoPlant } from "../../assets/photos/index.js";
+import { PhotoGrid, PhotoMe, N32_BrightPlant, N32_HeldBlack } from "../../assets/photos/index.js";
 import './AboutSite.css';
 import ScrollToTop from "../helper/ScrollToTop.tsx";
 
@@ -82,10 +82,10 @@ function AboutSite(){
     <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
       <ScrollToTop/>
       <Navbar/>
-      <PageTopperPhoto photoSrc={PhotoPlant} />
+      <PageTopperPhoto photoSrc={N32_BrightPlant} />
       <div className="container text-center flex-grow-1">
         <PageTopperHeading title="About Nevolta Systems"/>
-        <DualColumnContentRow photoAltText="siteStory" photoSrc={PhotoGrid} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>
+        <DualColumnContentRow photoAltText="siteStory" photoSrc={N32_HeldBlack} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>
         <DualColumnContentRow photoAltText="thisisme!" photoSrc={PhotoMe}  heading_line1="" heading_line2="" description_line1="" description_line2="" ifLeftPhoto={true} extraComponent={text_split2} pushMobilePhoto={false}/>
         <DualColumnContentRow photoAltText="console_grid" photoSrc={PhotoGrid} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split3} pushMobilePhoto={true}/>
       </div>

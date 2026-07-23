@@ -43,29 +43,12 @@ function Accordion({ title, content }: AccordionProps){
             <div className="accordion-item">
               <h2 className="accordion-header">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Why are there no on-site purchase methods?
+                  How can I purchase a Nevolta console?
                 </button>
               </h2>
               <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                  The official Nevolta store is still in the making, and is planned to be released in the near future.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Can I make my own Nevolta console?
-                </button>
-              </h2>
-              <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div className="accordion-body">
-                  What you now know as Nevolta, started with a bunch of tinkering and at-home product
-                  engineering, so one of our goals is to give back, and <strong>always offer a DIY kit </strong>
-                   for our consoles. <br/>
-                  By purchasing any kit, you are provided with 3D printable files, that you are free
-                  to modify! <br/>
-                  <strong>Guides page</strong> coming soon!
+                  The official Nevolta store is now live! You can visit it <a href="https://shop.nevoltasystems.com/" target="_blank" className="customLink">here</a> and purchase your own Nevolta console!
                 </div>
               </div>
             </div>

@@ -1,14 +1,14 @@
-import { Tap, Twotone, Ergonomic, Buttons, Dpad } from '../../assets/icons/index.js';
+import { Earphones, Twotone, Draw, Buttons, SpaceInvader } from '../../assets/icons/index.js';
 import FeaturePointer from "./FeaturePointer.js";
 
 function FeaturesList() {
     return (
         <div className="textPointerHolder">
-            <FeaturePointer text="Smooth, matte finish" iconSrc={Tap} />
-            <FeaturePointer text="Black or white shell" iconSrc={Twotone} />
-            <FeaturePointer text="Ergonomic design" iconSrc={Ergonomic} />
+            <FeaturePointer text="13 Retro emulators" iconSrc={SpaceInvader} />
+            <FeaturePointer text="Headphone Jack and Speaker" iconSrc={Earphones} />
+            <FeaturePointer text="Multiple color options" iconSrc={Twotone} />
             <FeaturePointer text="Quiet, tactile buttons" iconSrc={Buttons} />
-            <FeaturePointer text="Responsive DPad" iconSrc={Dpad} />
+            <FeaturePointer text="YOUR custom engraving" iconSrc={Draw} />
         </div>
     )
 }

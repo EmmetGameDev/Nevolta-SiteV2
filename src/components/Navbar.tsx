@@ -1,5 +1,5 @@
 import NavLinkHelper from './helper/NavLink.tsx';
-import { Products, Home, AboutUs, Envelope, Megaphone } from '../assets/icons/index.js';
+import { Store, Home, AboutUs, Envelope, Megaphone } from '../assets/icons/index.js';
 import { NevoltaTextLogo } from '../assets/svgs/index.js';
 import { NavLink } from 'react-router';
 import '../index.css';
@@ -15,11 +15,11 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <NavLinkHelper href="/" text="Home" iconSrc={Home} />
-                <NavLinkHelper href="/products" text="Products" iconSrc={Products} />
-                <NavLinkHelper href="/blog" text="Blog" iconSrc={Megaphone} />
-                <NavLinkHelper href="/about" text="About us" iconSrc={AboutUs} />
-                <NavLinkHelper href="/contact" text="Contact" iconSrc={Envelope} />
+                <NavLinkHelper href="/" text="Home" iconSrc={Home} newTab={false} />
+                <NavLinkHelper href="https://shop.nevoltasystems.com/" text="Store" iconSrc={Store} newTab={true} />
+                <NavLinkHelper href="/blog" text="Blog" iconSrc={Megaphone} newTab={false} />
+                <NavLinkHelper href="/about" text="About us" iconSrc={AboutUs} newTab={false} />
+                <NavLinkHelper href="/contact" text="Contact" iconSrc={Envelope} newTab={false} />
               </div>
             </div>
           </div>

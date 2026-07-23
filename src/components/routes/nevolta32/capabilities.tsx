@@ -5,12 +5,12 @@ import ScrollToTop from "../../helper/ScrollToTop";
 import ConsoleIconScroller from "../../ConsoleIconScroller";
 import DualColumnContentRow from "../../DualColumnContentRow";
 
-import { PhotoNES, PhotoVertESP32 } from "../../../assets/photos";
+import { N32_Tetris, N32_PCBVert } from "../../../assets/photos";
 import SiteFooter from "../../SiteFooter";
 
 const text_split1 = (
     <>
-        <p className="blogTextBlock">The <span className="text-font-alt">Nevolta V</span> uses a customized version of 
+        <p className="blogTextBlock">The <span className="text-font-alt">Nevolta32</span> uses a customized version of 
           open-source firmware for emulation, called <code className="codeBlock">retro-go</code>. You can learn more about it, on its Github page linked <a href="https://github.com/ducalex/retro-go" target="_blank" className="customLink">here</a></p>
           <p className="blogTextBlock">
             The device is capable of emulating:
@@ -20,7 +20,7 @@ const text_split1 = (
               <li className="scrollTextShowRight">- NES</li>
               <li className="scrollTextShowRight">- SNES</li>
               <li className="scrollTextShowRight">- Game & Watch</li>
-              <li className="scrollTextShowRight">- SG-1000</li>
+              <li className="scrollTextShowRight">- MSX</li>
               <li className="scrollTextShowRight">- Sega Master System</li>
               <li className="scrollTextShowRight">- Sega Genesis</li>
               <li className="scrollTextShowRight">- Sega Game Gear</li>
@@ -56,7 +56,7 @@ const text_split1 = (
                 </p>
                 <p className="blogTextBlock">
                 The sky is the limit! When it comes to storage, the microSD card is responsible for 
-                the ammount of games you can have available at once. On the <a href="/Nevolta-SiteV2/model-v/specs" className="customLink">32GB microSD card we recommend</a> you can store up to 15 000 games!
+                the ammount of games you can have available at once. On the <a href="/nevolta32/specs" className="customLink">32GB microSD card we recommend</a> you can store up to 15 000 games!
                 </p>
             </div>
     </>
@@ -67,11 +67,11 @@ function CapabilitiesPage(){
         <div className="container-fluid m-0 p-0 d-flex flex-column min-vh-100">
             <ScrollToTop/>
             <Navbar/>
-            <PageTopperPhoto photoSrc={PhotoNES} />
+            <PageTopperPhoto photoSrc={N32_Tetris} />
             <div className="container text-center flex-grow-1">
-                <PageTopperHeading title="Model V Capabilities"/>
+                <PageTopperHeading title="Nevolta32 Capabilities"/>
                 <ConsoleIconScroller/>
-                <DualColumnContentRow photoAltText="esp32" photoSrc={PhotoVertESP32} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>
+                <DualColumnContentRow photoAltText="esp32" photoSrc={N32_PCBVert} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>
             </div>
             <SiteFooter/>
             <script src="js/specsScript.js"></script>

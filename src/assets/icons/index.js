@@ -25,3 +25,7 @@ export { default as Ergonomic } from './ergonomic.svg';
 export { default as Battery } from './battery.svg';
 export { default as Megaphone } from './megaphone.svg';
 export { default as Youtube } from './youtube.svg';
+export { default as Earphones } from './earphones.svg';
+export { default as SpaceInvader } from './spaceInvader.svg';
+export { default as Draw } from './draw.svg';
+export { default as Store } from './store.svg';
