@@ -3,10 +3,19 @@ import SiteFooter from "../SiteFooter";
 import DualColumnContentRow from "../DualColumnContentRow.js";
 import PageTopperPhoto from "../helper/PageTopperPhoto.tsx";
 import PageTopperHeading from "../helper/PageTopperHeading.tsx";
+import InfiniteScroll, { type ScrollItem } from "../helper/InfiniteScroll.tsx";
 
 import { PhotoGrid, PhotoMe, N32_BrightPlant, N32_HeldBlack } from "../../assets/photos/index.js";
 import './AboutSite.css';
 import ScrollToTop from "../helper/ScrollToTop.tsx";
+
+const WorkShopMembers: ScrollItem[] = [
+{ title: "Empty Slot", date: "You could take it!" },
+{ title: "The Hall awaits your name", date: "October 2026" },
+{ title: "Your Name Here", date: "Or nickname if you'd like" },
+{ title: "Your Nickname", date: "Or first name if you'd like" },
+{ title: "Become a member!", date: "Link below" },
+];
 
 const text_split1 =
     (
@@ -71,7 +80,7 @@ const text_split3 = (
         Huge thanks to <b>Mikołaj</b> for taking on this task, and becoming part of the Nevolta Systems history! 
       </p>
       <p className="blogTextBlock">
-
+        <b>If you are looking for an experienced developer, hit up <a href="https://github.com/grumpymiki" className="customLink">GrumpyMiki on GitHub</a> or mail <a href="mailto:grumpymiki@proton.me" className="customLink">grumpymiki@proton.me</a></b>
       </p>
     </div>
 )
@@ -84,6 +93,17 @@ function AboutSite(){
       <Navbar/>
       <PageTopperPhoto photoSrc={N32_BrightPlant} />
       <div className="container text-center flex-grow-1">
+        <div className="row blogRow">
+            <div className="col-lg-12">
+                <h1 className="hallHeadingCenter text-font-alt"><b>The Hall of Supporters</b></h1>
+            </div>
+        </div>
+        <InfiniteScroll items={WorkShopMembers} duration={30}/>
+        <div className="row blogRow">
+            <div className="col-lg-12">
+                <h1 className="hallSubheadingCenter">Want to see your name here? <a href="https://www.youtube.com/channel/UCQVkiCGag0ek-lM5E7ZfOSg/join" className="customLink">Become a Workshop Member on YouTube!</a></h1>
+            </div>
+        </div>
         <PageTopperHeading title="About Nevolta Systems"/>
         <DualColumnContentRow photoAltText="siteStory" photoSrc={N32_HeldBlack} heading_line1="" heading_line2="" description_line1="" description_line2="" extraComponent={text_split1} pushMobilePhoto={true}/>
         <DualColumnContentRow photoAltText="thisisme!" photoSrc={PhotoMe}  heading_line1="" heading_line2="" description_line1="" description_line2="" ifLeftPhoto={true} extraComponent={text_split2} pushMobilePhoto={false}/>

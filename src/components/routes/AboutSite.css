@@ -16,3 +16,14 @@
 .mainPhotoAboutDiv{
     background-image: url('../img/photos/P1050572.JPG');
 }
+
+.hallHeadingCenter{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hallSubheadingCenter{
+    font-size: 1rem;
+    margin-bottom: -20px;
+}

@@ -1,0 +1,102 @@
+.infinite-scroll {
+  --scroll-duration: 30s;
+  --scroll-gap: 1.5rem;
+  --item-padding: 1.5rem;
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* The moving strip */
+.infinite-scroll__track {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll-move var(--scroll-duration) linear infinite;
+  will-change: transform;
+}
+
+/* Each group must have identical content and spacing */
+.infinite-scroll__group {
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  gap: var(--scroll-gap);
+  padding-right: var(--scroll-gap);
+}
+
+/* Individual boxes */
+.infinite-scroll__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200px;
+  padding: var(--item-padding) 2rem;
+
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 12px;
+  background: rgba(128, 128, 128, 0.04);
+  text-align: center;
+}
+
+/* Large main text */
+.infinite-scroll__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* Smaller, muted date */
+.infinite-scroll__date {
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 0.85rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Move exactly one group's width for a seamless loop */
+@keyframes infinite-scroll-move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.infinite-scroll:hover .infinite-scroll__track {
+  animation-play-state: paused;
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  .infinite-scroll__track {
+    animation: none;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .infinite-scroll__group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .infinite-scroll__group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .infinite-scroll__item {
+    white-space: normal;
+  }
+
+  .infinite-scroll__title,
+  .infinite-scroll__date {
+    white-space: normal;
+  }
+}

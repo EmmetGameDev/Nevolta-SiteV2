@@ -48,3 +48,4 @@ export { default as N32_microSD } from './N32_microSD.webp';
 export { default as N32_Charging } from './N32_Charging.webp';
 export { default as N32_PCBVert } from './N32_PCBVert.webp';
 export { default as N32_Thumbnail } from './N32_Thumbnail.webp';
+export { default as CD_Thumbnail } from './CD_Thumbnail.webp';

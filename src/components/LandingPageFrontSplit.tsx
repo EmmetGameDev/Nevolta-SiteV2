@@ -22,7 +22,7 @@ function LandingPageFrontSplit({title, description, modelName, videoSrc}: landin
             <div className="col-md-4">
                 <div className="splitVertCenterer">
                     <h3 className="allNewText">{title}<ModelNameText modelName={modelName} /></h3>
-                    <LargeButton text="Get Yours" href="https://shop.nevoltasystems.com/products/nevolta32-console"/>
+                    <LargeButton text="Watch now" href="https://www.youtube.com/watch?v=dW5HGrhBync"/>
                 </div>
             </div>
         </div>
